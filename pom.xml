@@ -54,11 +54,6 @@
             <name>Rahul Kulkarni</name>
             <email>rahul.kulkarni@microfocus.com</email>
         </developer>
-        <developer>
-            <id>thilagavathi-santhoshkumar</id>
-            <name>Thilagavathi Santhoshkumar</name>
-            <email>thilagavathi.santhoshkumar@microfocus.com</email>
-        </developer>
     </developers>
 
     <scm>
@@ -107,6 +102,8 @@
         <threetenbp.version>1.4.1</threetenbp.version>
         <tomcat-embed-core.version>9.0.31</tomcat-embed-core.version>
         <validation-api.version>2.0.1.Final</validation-api.version>
+        <analyticsVersion>2.3.0-558</analyticsVersion>
+        <postgresql.version>42.2.10.jre7</postgresql.version>
     </properties>
 
     <dependencyManagement>
@@ -147,6 +144,51 @@
             <?SORTPOM RESUME?>
 
             <!--Other dependencies-->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${com.google.guava.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.mchange</groupId>
+                <artifactId>c3p0</artifactId>
+                <version>0.9.5.5</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.ws.rs</groupId>
+                <artifactId>javax.ws.rs-api</artifactId>
+                <version>2.1.1</version>
+            </dependency>
+            <dependency>
+                <groupId>org.antlr</groupId>
+                <artifactId>antlr4-annotations</artifactId>
+                <version>4.3</version>
+            </dependency>
+              <dependency>
+                <groupId>org.antlr</groupId>
+                <artifactId>antlr4-runtime</artifactId>
+                <version>4.8-1</version>
+            </dependency>
+            <dependency>
+                <groupId>org.javassist</groupId>
+                <artifactId>javassist</artifactId>
+                <version>3.26.0-GA</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hpe.caf.analytics</groupId>
+                <artifactId>aspen-dropwizard-spring</artifactId>
+                <version>${analyticsVersion}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hpe.caf.analytics</groupId>
+                <artifactId>rest-client</artifactId>
+                <version>${analyticsVersion}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hpe.caf.analytics</groupId>
+                <artifactId>utils</artifactId>
+                <version>${analyticsVersion}</version>
+            </dependency>
             <dependency>
                 <groupId>com.fasterxml</groupId>
                 <artifactId>classmate</artifactId>
