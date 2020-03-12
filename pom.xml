@@ -105,6 +105,7 @@
         <analyticsVersion>2.3.0-558</analyticsVersion>
         <postgresql.version>42.2.10.jre7</postgresql.version>
         <h2.version>1.4.196</h2.version>
+        <jetty.bom.version>9.4.20.v20190813</jetty.bom.version>
     </properties>
 
     <dependencyManagement>
@@ -139,6 +140,13 @@
                 <groupId>com.github.cafdataprocessing</groupId>
                 <artifactId>worker-document-framework</artifactId>
                 <version>${caf.worker-document-framework.bom.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-bom</artifactId>
+                <version>${jetty.bom.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
