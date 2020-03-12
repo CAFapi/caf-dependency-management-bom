@@ -68,6 +68,10 @@
 
         <com.fasterxml.jackson.bom.version>2.10.3</com.fasterxml.jackson.bom.version>
         <caf.worker-document-framework.bom.version>4.3.0-SNAPSHOT</caf.worker-document-framework.bom.version>
+        <analyticsVersion>3.0.0-SNAPSHOT</analyticsVersion>
+        <antlr4-annotations.version>4.3</antlr4-annotations.version>
+        <antlr4-runtime.version>4.8-1</antlr4-runtime.version>
+        <c3p0.version>0.9.5.5</c3p0.version>
         <caf-logging-logback.version>1.3.0-SCMOD-8826-SNAPSHOT</caf-logging-logback.version>
         <caf-storage-service-client.version>6.1.0-509</caf-storage-service-client.version>
         <classmate.version>1.5.1</classmate.version>
@@ -78,6 +82,7 @@
         <commons-lang3.version>3.9</commons-lang3.version>
         <edkjni.version>12.4.2-rc</edkjni.version>
         <flyway-core.version>6.3.0</flyway-core.version>
+        <h2.version>1.4.196</h2.version>
         <hamcrest-all.version>1.3</hamcrest-all.version>
         <hamcrest-core.version>2.2</hamcrest-core.version>
         <hdrhistogram.version>2.1.10</hdrhistogram.version>
@@ -85,8 +90,13 @@
         <httpclient.version>4.5.11</httpclient.version>
         <httpcore.version>4.4.13</httpcore.version>
         <jackson.threetenbp>2.10.0</jackson.threetenbp>
+        <javax.ws.rs-api.version>2.1.1</javax.ws.rs-api.version>
+        <javassist.version>3.26.0-GA</javassist.version>
         <jboss-logging.version>3.4.1.Final</jboss-logging.version>
+        <jersey-version>1.19</jersey-version>
+        <jetty.bom.version>9.4.20.v20190813</jetty.bom.version>
         <joda-time.version>2.10.5</joda-time.version>
+        <jsr311-api.version>1.1.1</jsr311-api.version>
         <junit.jupiter.version>5.6.0</junit.jupiter.version>
         <junit.version>4.13</junit.version>
         <mockito.version>3.3.1</mockito.version>
@@ -94,18 +104,20 @@
         <okhttp-version>2.7.5</okhttp-version>
         <okio.version>2.4.3</okio.version>
         <org.projectlombok.version>1.18.12</org.projectlombok.version>
+        <persistence-api.version>2.2</persistence-api.version>
+        <postgresql.version>42.2.10.jre7</postgresql.version>
+        <reflections.version>0.9.11</reflections.version>
         <snakeyaml.version>1.26</snakeyaml.version>
         <sqlbuilder.version>3.0.0</sqlbuilder.version>
         <swagger.client.templates.version>1.0.0-SNAPSHOT</swagger.client.templates.version>
         <swagger.ui.cafapi.version>1.0.0-SNAPSHOT</swagger.ui.cafapi.version>
+        <swagger-jersey-jaxrs.version>1.5.21</swagger-jersey-jaxrs.version>
+        <swagger-ui-version>3.23.10</swagger-ui-version>
         <swagger-version>1.6.0</swagger-version>
         <threetenbp.version>1.4.1</threetenbp.version>
         <tomcat-embed-core.version>9.0.31</tomcat-embed-core.version>
         <validation-api.version>2.0.1.Final</validation-api.version>
-        <analyticsVersion>2.3.0-558</analyticsVersion>
-        <postgresql.version>42.2.10.jre7</postgresql.version>
-        <h2.version>1.4.196</h2.version>
-        <jetty.bom.version>9.4.20.v20190813</jetty.bom.version>
+
     </properties>
 
     <dependencyManagement>
@@ -119,7 +131,6 @@
             - Make sure to have xxx.version property defined in the properties section above. Don't use the version
             number directly in the dependencies. The reason for that is we can run "mvn versions:update-properties"
             command which sets properties to the latest versions of specific artifacts. -->
-
             <!--BOM dependencies-->
             <?SORTPOM IGNORE?>
             <dependency>
@@ -153,51 +164,6 @@
             <?SORTPOM RESUME?>
 
             <!--Other dependencies-->
-            <dependency>
-                <groupId>com.google.guava</groupId>
-                <artifactId>guava</artifactId>
-                <version>${com.google.guava.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.mchange</groupId>
-                <artifactId>c3p0</artifactId>
-                <version>0.9.5.5</version>
-            </dependency>
-            <dependency>
-                <groupId>javax.ws.rs</groupId>
-                <artifactId>javax.ws.rs-api</artifactId>
-                <version>2.1.1</version>
-            </dependency>
-            <dependency>
-                <groupId>org.antlr</groupId>
-                <artifactId>antlr4-annotations</artifactId>
-                <version>4.3</version>
-            </dependency>
-              <dependency>
-                <groupId>org.antlr</groupId>
-                <artifactId>antlr4-runtime</artifactId>
-                <version>4.8-1</version>
-            </dependency>
-            <dependency>
-                <groupId>org.javassist</groupId>
-                <artifactId>javassist</artifactId>
-                <version>3.26.0-GA</version>
-            </dependency>
-            <dependency>
-                <groupId>com.hpe.caf.analytics</groupId>
-                <artifactId>aspen-dropwizard-spring</artifactId>
-                <version>${analyticsVersion}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.hpe.caf.analytics</groupId>
-                <artifactId>rest-client</artifactId>
-                <version>${analyticsVersion}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.hpe.caf.analytics</groupId>
-                <artifactId>utils</artifactId>
-                <version>${analyticsVersion}</version>
-            </dependency>
             <dependency>
                 <groupId>com.fasterxml</groupId>
                 <artifactId>classmate</artifactId>
@@ -234,9 +200,29 @@
                 <version>${com.google.guava.version}</version>
             </dependency>
             <dependency>
+                <groupId>com.h2database</groupId>
+                <artifactId>h2</artifactId>
+                <version>${h2.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>com.healthmarketscience.sqlbuilder</groupId>
                 <artifactId>sqlbuilder</artifactId>
                 <version>${sqlbuilder.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hpe.caf.analytics</groupId>
+                <artifactId>aspen-dropwizard-spring</artifactId>
+                <version>${analyticsVersion}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hpe.caf.analytics</groupId>
+                <artifactId>rest-client</artifactId>
+                <version>${analyticsVersion}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hpe.caf.analytics</groupId>
+                <artifactId>utils</artifactId>
+                <version>${analyticsVersion}</version>
             </dependency>
             <dependency>
                 <groupId>com.hpe.caf.storage</groupId>
@@ -244,9 +230,9 @@
                 <version>${caf-storage-service-client.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.h2database</groupId>
-                <artifactId>h2</artifactId>
-                <version>${h2.version}</version>
+                <groupId>com.mchange</groupId>
+                <artifactId>c3p0</artifactId>
+                <version>${c3p0.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.microfocus.caf.eduction</groupId>
@@ -278,6 +264,16 @@
                 <artifactId>okio</artifactId>
                 <version>${okio.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.sun.jersey</groupId>
+                <artifactId>jersey-server</artifactId>
+                <version>${jersey-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sun.jersey</groupId>
+                <artifactId>jersey-servlet</artifactId>
+                <version>${jersey-version}</version>
+            </dependency>
 
             <!--Test if this works-->
             <dependency>
@@ -291,6 +287,11 @@
                 <version>${swagger-version}</version>
             </dependency>
             <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-jersey-jaxrs</artifactId>
+                <version>${swagger-jersey-jaxrs.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>javax.persistence</groupId>
                 <artifactId>javax.persistence-api</artifactId>
                 <version>${persistence-api.version}</version>
@@ -301,6 +302,16 @@
                 <version>${validation-api.version}</version>
             </dependency>
             <dependency>
+                <groupId>javax.ws.rs</groupId>
+                <artifactId>javax.ws.rs-api</artifactId>
+                <version>${javax.ws.rs-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.ws.rs</groupId>
+                <artifactId>jsr311-api</artifactId>
+                <version>$[jsr311-api.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>joda-time</groupId>
                 <artifactId>joda-time</artifactId>
                 <version>${joda-time.version}</version>
@@ -309,6 +320,16 @@
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>${junit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.antlr</groupId>
+                <artifactId>antlr4-annotations</artifactId>
+                <version>${antlr4-annotations.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.antlr</groupId>
+                <artifactId>antlr4-runtime</artifactId>
+                <version>${antlr4-runtime.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.commons</groupId>
@@ -331,11 +352,6 @@
                 <version>${tomcat-embed-core.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.flywaydb</groupId>
-                <artifactId>flyway-core</artifactId>
-                <version>${flyway-core.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>org.hamcrest</groupId>
                 <artifactId>hamcrest-all</artifactId>
                 <version>${hamcrest-all.version}</version>
@@ -351,9 +367,9 @@
                 <version>${hdrhistogram.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.hibernate</groupId>
-                <artifactId>hibernate-validator</artifactId>
-                <version>${hibernate-validator.version}</version>
+                <groupId>org.javassist</groupId>
+                <artifactId>javassist</artifactId>
+                <version>${javassist.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.jboss.logging</groupId>
@@ -396,9 +412,19 @@
                 <version>${org.projectlombok.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.reflections</groupId>
+                <artifactId>reflections</artifactId>
+                <version>${reflections.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.threeten</groupId>
                 <artifactId>threetenbp</artifactId>
                 <version>${threetenbp.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.webjars.npm</groupId>
+                <artifactId>swagger-ui-dist</artifactId>
+                <version>${swagger-ui-version}</version>
             </dependency>
             <dependency>
                 <groupId>org.yaml</groupId>
