@@ -66,24 +66,27 @@
         <copyrightYear>2020</copyrightYear>
         <copyrightNotice>Copyright ${copyrightYear} Micro Focus or one of its affiliates.</copyrightNotice>
 
+        <!--BOM dependencies versions-->
+        <org.glassfish.jersey.bom.version>2.30.1</org.glassfish.jersey.bom.version>
+        <io.dropwizard.bom.version>2.0.2</io.dropwizard.bom.version>
         <com.fasterxml.jackson.bom.version>2.10.3</com.fasterxml.jackson.bom.version>
         <caf.worker-document-framework.bom.version>4.3.0-SNAPSHOT</caf.worker-document-framework.bom.version>
+        
+        <!--Internal dependencies versions -->
+        <caf-logging-logback.version>1.3.0-SNAPSHOT</caf-logging-logback.version>
+        <caf-storage-service-client.version>6.1.0-SNAPSHOT</caf-storage-service-client.version>
         <caf.worker-framework.version>3.3.0-SNAPSHOT</caf.worker-framework.version>
-        <junit.jupiter.version>5.6.0</junit.jupiter.version>
-        <mockito.version>3.3.1</mockito.version>
-        <com.github.cafapi.version>1.17.0-201</com.github.cafapi.version>
-        <junit.version>4.12</junit.version>
+        <analytics.aspen-dropwizard-spring.version>2.3.0-558</analytics.aspen-dropwizard-spring.version>
         <idm-components.version>1.4.0-SNAPSHOT</idm-components.version>
         <verity-components.version>3.2.0-SNAPSHOT</verity-components.version>
-        <spring.version>5.2.3.RELEASE</spring.version>
-        <ed.version>1.6.3-30</ed.version>
-        <org.hibernate.jpa.api.version>1.0.0.Final</org.hibernate.jpa.api.version>
         <aspen.data-enrichment-shared.version>3.1.0-743</aspen.data-enrichment-shared.version>
         <aspen.analytics-lib.version>3.1.0-709</aspen.analytics-lib.version>
         <caf-audit.version>3.4.0-380</caf-audit.version>
+        <caf.worker-batch-framework.version>3.2.0-256</caf.worker-batch-framework.version>
+        <com.github.cafapi.version>1.17.0-201</com.github.cafapi.version>
 
-        <caf-logging-logback.version>1.2.0-67</caf-logging-logback.version>
-        <caf-storage-service-client.version>6.1.0-509</caf-storage-service-client.version>
+
+        <!-- Third party dependencies -->
         <com.google.code.gson.version>2.8.6</com.google.code.gson.version>
         <com.google.guava.version>28.2-jre</com.google.guava.version>
         <com.rabbitmq.version>5.8.0</com.rabbitmq.version>
@@ -95,43 +98,55 @@
         <org.eclipse.jetty.bom..version>9.4.20.v20190813</org.eclipse.jetty.bom..version>
         <commons-lang3.version>3.8.1</commons-lang3.version>
         <slf4j.version>1.7.26</slf4j.version>
-        <analytics.aspen-dropwizard-spring.version>2.3.0-558</analytics.aspen-dropwizard-spring.version>
         <idm-components.version>1.4.0-SNAPSHOT</idm-components.version>
+        <spring.version>5.2.3.RELEASE</spring.version>
+        <ed.version>1.6.3-30</ed.version>
+        <org.hibernate.jpa.api.version>1.0.0.Final</org.hibernate.jpa.api.version>
         <dropwizard.version>1.3.16</dropwizard.version>
-        <caf.worker-batch-framework.version>3.2.0-256</caf.worker-batch-framework.version>
-        <javax.annotation.version>1.3.2</javax.annotation.version>
+        <junit.jupiter.version>5.6.0</junit.jupiter.version>
+        <mockito.version>3.3.1</mockito.version>
+        <junit.version>4.12</junit.version>
         <org.apache.httpcomponents.version>4.4.13</org.apache.httpcomponents.version>
-        <jboss-logging.version>3.4.1.Final</jboss-logging.version>
         <org.jvnet.mimepull.version>1.9.12</org.jvnet.mimepull.version>
         <servlet-api.version>4.0.1</servlet-api.version>
         <org.keycloak.version>8.0.1</org.keycloak.version>
         <swagger.version>1.5.23</swagger.version>
-        <swagger.version>1.5.23</swagger.version>
-        <dropwizard.version>1.3.16</dropwizard.version>
         <dropwizard-metrics.version>4.0.5</dropwizard-metrics.version>
         <gson.version>2.8.5</gson.version>
         <guava.version>28.0-jre</guava.version>
         <org.glassfish.jersey.version>2.25.1</org.glassfish.jersey.version>
         <net.jodah.lyra.version>0.5.5</net.jodah.lyra.version>
-        <com.github.jobservice.client2.version>3.1.0-578</com.github.jobservice.client2.version>
         <org.json.version>20190722</org.json.version>
         <com.microfocus.darwin.system-user-lib.version>3.1.0-SNAPSHOT</com.microfocus.darwin.system-user-lib.version>
+        <com.github.jobservice.client2.version>3.1.0-578</com.github.jobservice.client2.version>
+        <caf.rest-client.version>1.7.0-15</caf.rest-client.version>
         <com.nitorcreations.junit.runners.version>1.3</com.nitorcreations.junit.runners.version>
         <org.easymock.version>4.2</org.easymock.version>
         <org.assertj.core.version>3.15.0</org.assertj.core.version>
         <collection-center.version>3.2.0-SNAPSHOT</collection-center.version>
-        <javax.validation-api.version>2.0.1.Final</javax.validation-api.version>
         <javax.rs.api.version>2.1.1</javax.rs.api.version>
         <resteasy.version>3.6.1.Final</resteasy.version>
         <httpmime.version>4.5.5</httpmime.version>
         <httpclient.version>4.5.5</httpclient.version>
-        <caf.rest-client.version>1.7.0-15</caf.rest-client.version>
         <org.hibernate.core.version>5.4.2.Final</org.hibernate.core.version>
         <postgres.version>42.2.5</postgres.version>
         <org.reflections.version>0.9.11</org.reflections.version>
         <org.apache.mina.core.version>2.0.21</org.apache.mina.core.version>
         <ftplet-api.version>1.1.1</ftplet-api.version>
         <org.apache.maven.shared.utils.version>0.2</org.apache.maven.shared.utils.version>
+        <junit.jupiter.version>5.6.0</junit.jupiter.version>
+        <mockito.version>3.3.1</mockito.version>
+        <org.projectlombok.version>1.18.12</org.projectlombok.version>
+        <snakeyaml.version>1.26</snakeyaml.version>
+        <javax.validation.validation-api.version>2.0.1.Final</javax.validation.validation-api.version>
+        <javax.ws.rs-api.version>2.1.1</javax.ws.rs-api.version>
+        <jboss-logging.version>3.4.1.Final</jboss-logging.version>
+        <joda-time.version>2.10.5</joda-time.version>
+        <javax.annotation-api.version>1.3.2</javax.annotation-api.version>
+        <commons-codec.version>1.14</commons-codec.version>
+        <!--Hibernate version below is updated, but the latest version is throwing exception-->
+        <!--<hibernate-validator.version>6.1.2.Final</hibernate-validator.version>-->
+        <hibernate-validator.version>5.4.3.Final</hibernate-validator.version>
     </properties>
 
     <dependencyManagement>
@@ -148,12 +163,19 @@
 
             <!--BOM dependencies-->
             <?SORTPOM IGNORE?>
-            <!--The jackson bom brings in 2.9.0 of jackson-annotations which needs upgrade for fortify-->
+            <!--Until we fix the WorkerFramework/worker-framework and CAFDataProcessing/worker-document. this needs
+            to be on top-->
+            <!--Don't move io.dropwizard bom for now before this. It'll break things-->
             <dependency>
-                <groupId>com.fasterxml.jackson.core</groupId>
-                <artifactId>jackson-annotations</artifactId>
-                <version>${com.fasterxml.jackson.bom.version}</version>
+                <groupId>com.github.cafdataprocessing</groupId>
+                <artifactId>worker-document-framework</artifactId>
+                <version>${caf.worker-document-framework.bom.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
+
+            <!--This version of com.fasterxml.jackson won't be effective as worker-framework brings in 2.9.8-->
+            <!--https://github.com/WorkerFramework/worker-framework/blob/develop/pom.xml#L113-->
             <dependency>
                 <groupId>com.fasterxml.jackson</groupId>
                 <artifactId>jackson-bom</artifactId>
@@ -161,10 +183,19 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!--This version of io.dropwizard won't be effective as worker-framework brings in 1.3.14-->
+            <!--https://github.com/WorkerFramework/worker-framework/blob/baabc0d907f99ca214202460dad84bd207451f34/pom.xml#L127-->
             <dependency>
-                <groupId>com.github.cafdataprocessing</groupId>
-                <artifactId>worker-document-framework</artifactId>
-                <version>${caf.worker-document-framework.bom.version}</version>
+                <groupId>io.dropwizard</groupId>
+                <artifactId>dropwizard-bom</artifactId>
+                <version>${io.dropwizard.bom.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.glassfish.jersey</groupId>
+                <artifactId>jersey-bom</artifactId>
+                <version>${org.glassfish.jersey.bom.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -196,12 +227,35 @@
                 <artifactId>amqp-client</artifactId>
                 <version>${com.rabbitmq.version}</version>
             </dependency>
-
-            <!--Test if this works-->
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>${commons-codec.version}</version>
+            </dependency>
             <dependency>
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
                 <version>${commons-io.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.annotation</groupId>
+                <artifactId>javax.annotation-api</artifactId>
+                <version>${javax.annotation-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.validation</groupId>
+                <artifactId>validation-api</artifactId>
+                <version>${javax.validation.validation-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.ws.rs</groupId>
+                <artifactId>javax.ws.rs-api</artifactId>
+                <version>${javax.ws.rs-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>joda-time</groupId>
+                <artifactId>joda-time</artifactId>
+                <version>${joda-time.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.hamcrest</groupId>
@@ -212,6 +266,11 @@
                 <groupId>org.hibernate</groupId>
                 <artifactId>hibernate-validator</artifactId>
                 <version>${hibernate.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.logging</groupId>
+                <artifactId>jboss-logging</artifactId>
+                <version>${jboss-logging.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.junit.jupiter</groupId>
@@ -305,24 +364,9 @@
                 <version>${spring.version}</version>
             </dependency>
             <dependency>
-                <groupId>javax.annotation</groupId>
-                <artifactId>javax.annotation-api</artifactId>
-                <version>${javax.annotation.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>javax.ws.rs</groupId>
-                <artifactId>javax.ws.rs-api</artifactId>
-                <version>${javax.rs.api.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpcore</artifactId>
                 <version>${org.apache.httpcomponents.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.jboss.logging</groupId>
-                <artifactId>jboss-logging</artifactId>
-                <version>${jboss-logging.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.jvnet.mimepull</groupId>
@@ -509,11 +553,6 @@
                 <groupId>com.hpe.aspen</groupId>
                 <artifactId>app-resources-lib</artifactId>
                 <version>${verity-components.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>javax.validation</groupId>
-                <artifactId>validation-api</artifactId>
-                <version>${javax.validation-api.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.hpe.caf.analytics</groupId>
