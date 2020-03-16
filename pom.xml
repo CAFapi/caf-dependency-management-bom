@@ -68,6 +68,8 @@
 
         <com.fasterxml.jackson.bom.version>2.10.3</com.fasterxml.jackson.bom.version>
         <caf.worker-document-framework.bom.version>4.3.0-SNAPSHOT</caf.worker-document-framework.bom.version>
+        <caf.worker-batch-framework.version>3.3.0-SNAPSHOT</caf.worker-batch-framework.version>
+        <amazonawsVersion>1.11.618</amazonawsVersion>
         <analyticsVersion>3.0.0-SNAPSHOT</analyticsVersion>
         <antlr4-annotations.version>4.3</antlr4-annotations.version>
         <antlr4-runtime.version>4.8-1</antlr4-runtime.version>
@@ -118,6 +120,8 @@
         <threetenbp.version>1.4.1</threetenbp.version>
         <tomcat-embed-core.version>9.0.31</tomcat-embed-core.version>
         <validation-api.version>2.0.1.Final</validation-api.version>
+        <caf.workerframework.version>3.3.0-SNAPSHOT</caf.workerframework.version>
+        <commons-codec.version>1.14</commons-codec.version>
 
     </properties>
 
@@ -133,6 +137,11 @@
             number directly in the dependencies. The reason for that is we can run "mvn versions:update-properties"
             command which sets properties to the latest versions of specific artifacts. -->
             <!--BOM dependencies-->
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>1.14</version>
+            </dependency>
             <?SORTPOM IGNORE?>
             <dependency>
                 <groupId>com.fasterxml.jackson</groupId>
@@ -149,9 +158,23 @@
                 <scope>import</scope>
             </dependency>
             <dependency>
+                <groupId>com.github.workerframework</groupId>
+                <artifactId>worker-framework</artifactId>
+                <version>${caf.workerframework.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
                 <groupId>com.github.cafdataprocessing</groupId>
                 <artifactId>worker-document-framework</artifactId>
                 <version>${caf.worker-document-framework.bom.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.github.jobservice</groupId>
+                <artifactId>worker-batch-framework</artifactId>
+                <version>${caf.worker-batch-framework.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -437,6 +460,56 @@
                 <groupId>org.yaml</groupId>
                 <artifactId>snakeyaml</artifactId>
                 <version>${snakeyaml.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.jobservice</groupId>
+                <artifactId>job-service-client2</artifactId>
+                <version>3.1.0-578</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.jobservice</groupId>
+                <artifactId>worker-batch-extensibility</artifactId>
+                <version>${caf.worker-batch-framework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hpe.caf.analytics</groupId>
+                <artifactId>analytics-shared</artifactId>
+                <version>${analyticsVersion}</version>
+            </dependency>
+             <dependency>
+                <groupId>com.hpe.caf.messagebuilder</groupId>
+                <artifactId>document-message-builder</artifactId>
+                <version>1.2.0-15</version>
+            </dependency>
+             <dependency>
+                <groupId>com.hpe.caf.worker.batch</groupId>
+                <artifactId>worker-batch-shared</artifactId>
+                <version>1.13.0-51</version>
+            </dependency>
+             <dependency>
+                <groupId>commons-logging</groupId>
+                <artifactId>commons-logging</artifactId>
+                <version>1.2</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.mail</groupId>
+                <artifactId>mailapi</artifactId>
+                <version>1.4.3</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jadira.usertype</groupId>
+                <artifactId>usertype.spi</artifactId>
+                <version>7.0.0.CR1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hpe.caf</groupId>
+                <artifactId>rest-client</artifactId>
+                <version>1.7.0-15</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.jobservice</groupId>
+                <artifactId>worker-batch</artifactId>
+                <version>${caf.worker-batch-framework.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
