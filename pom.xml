@@ -67,10 +67,10 @@
         <copyrightNotice>Copyright ${copyrightYear} Micro Focus or one of its affiliates.</copyrightNotice>
 
         <!--BOM dependencies versions-->
-        <org.glassfish.jersey.bom.version>2.30.1</org.glassfish.jersey.bom.version>
-        <io.dropwizard.bom.version>2.0.2</io.dropwizard.bom.version>
-        <com.fasterxml.jackson.bom.version>2.10.3</com.fasterxml.jackson.bom.version>
         <caf.worker-document-framework.bom.version>4.3.0-SNAPSHOT</caf.worker-document-framework.bom.version>
+        <com.fasterxml.jackson.bom.version>2.10.3</com.fasterxml.jackson.bom.version>
+        <io.dropwizard.bom.version>2.0.2</io.dropwizard.bom.version>
+        <org.glassfish.jersey.bom.version>2.30.1</org.glassfish.jersey.bom.version>
 
         <!--Internal dependencies versions -->
         <caf-logging-logback.version>1.3.0-SNAPSHOT</caf-logging-logback.version>
@@ -82,6 +82,8 @@
         <com.jayway.jsonpath.version>2.4.0</com.jayway.jsonpath.version>
         <com.mesosphere.marathon-client.version>0.6.2</com.mesosphere.marathon-client.version>
         <com.rabbitmq.version>5.8.0</com.rabbitmq.version>
+        <com.squareup.okhttp.version>2.7.5</com.squareup.okhttp.version>
+        <com.squareup.retrofit.version>1.9.0</com.squareup.retrofit.version>
         <commons-codec.version>1.14</commons-codec.version>
         <commons-io.version>2.6</commons-io.version>
         <hamcrest-all.version>1.3</hamcrest-all.version>
@@ -191,6 +193,16 @@
                 <groupId>com.rabbitmq</groupId>
                 <artifactId>amqp-client</artifactId>
                 <version>${com.rabbitmq.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.squareup.okhttp</groupId>
+                <artifactId>okhttp</artifactId>
+                <version>${com.squareup.okhttp.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.squareup.retrofit</groupId>
+                <artifactId>retrofit</artifactId>
+                <version>${com.squareup.retrofit.version}</version>
             </dependency>
             <dependency>
                 <groupId>commons-codec</groupId>
