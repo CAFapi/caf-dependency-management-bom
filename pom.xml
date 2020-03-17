@@ -122,6 +122,13 @@
 
             <!--BOM dependencies-->
             <?SORTPOM IGNORE?>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-framework-bom</artifactId>
+                <version>${org.springframework.bom.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
             <!--Until we fix the WorkerFramework/worker-framework and CAFDataProcessing/worker-document. this needs
             to be on top-->
             <!--Don't move io.dropwizard bom for now before this. It'll break things-->
@@ -155,13 +162,6 @@
                 <groupId>org.glassfish.jersey</groupId>
                 <artifactId>jersey-bom</artifactId>
                 <version>${org.glassfish.jersey.bom.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-framework-bom</artifactId>
-                <version>${org.springframework.bom.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
