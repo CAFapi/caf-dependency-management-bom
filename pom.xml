@@ -71,6 +71,7 @@
         <com.fasterxml.jackson.bom.version>2.10.3</com.fasterxml.jackson.bom.version>
         <io.dropwizard.bom.version>2.0.2</io.dropwizard.bom.version>
         <org.glassfish.jersey.bom.version>2.30.1</org.glassfish.jersey.bom.version>
+        <org.springframework.bom.version>5.2.4.RELEASE</org.springframework.bom.version>
 
         <!--Internal dependencies versions -->
         <analytics.aspen-dropwizard-spring.version>2.3.0-558</analytics.aspen-dropwizard-spring.version>
@@ -81,19 +82,23 @@
         <caf.rest-client.version>1.7.0-15</caf.rest-client.version>
         <caf.worker-batch-framework.version>3.2.0-256</caf.worker-batch-framework.version>
         <caf.worker-framework.version>3.3.0-SNAPSHOT</caf.worker-framework.version>
+        <collection-center.version>3.2.0-SNAPSHOT</collection-center.version>
         <com.github.cafapi.version>1.17.0-201</com.github.cafapi.version>
         <com.github.jobservice.client2.version>3.1.0-578</com.github.jobservice.client2.version>
         <com.microfocus.darwin.system-user-lib.version>3.1.0-SNAPSHOT</com.microfocus.darwin.system-user-lib.version>
         <idm-components.version>1.4.0-SNAPSHOT</idm-components.version>
         <verity.common-lib.version>3.2.0-SNAPSHOT</verity.common-lib.version>
-
+        
         <!-- Third party dependencies -->
 
-        <collection-center.version>3.2.0-SNAPSHOT</collection-center.version>
         <com.google.code.gson.version>2.8.6</com.google.code.gson.version>
         <com.google.guava.version>28.2-jre</com.google.guava.version>
+        <com.jayway.jsonpath.version>2.4.0</com.jayway.jsonpath.version>
+        <com.mesosphere.marathon-client.version>0.6.2</com.mesosphere.marathon-client.version>
         <com.nitorcreations.junit.runners.version>1.3</com.nitorcreations.junit.runners.version>
         <com.rabbitmq.version>5.8.0</com.rabbitmq.version>
+        <com.squareup.okhttp.version>2.7.5</com.squareup.okhttp.version>
+        <com.squareup.retrofit.version>1.9.0</com.squareup.retrofit.version>
         <commons-codec.version>1.14</commons-codec.version>
         <commons-io.version>2.6</commons-io.version>
         <commons-lang3.version>3.8.1</commons-lang3.version>
@@ -106,18 +111,17 @@
         <hamcrest-all.version>1.3</hamcrest-all.version>
         <httpclient.version>4.5.5</httpclient.version>
         <httpmime.version>4.5.5</httpmime.version>
-        <idm-components.version>1.4.0-SNAPSHOT</idm-components.version>
+        <io.swagger.swagger-annotations.version>1.6.0</io.swagger.swagger-annotations.version>
+        <jakarta.validation-api.version>2.0.2</jakarta.validation-api.version>
         <javax.annotation-api.version>1.3.2</javax.annotation-api.version>
-        <javax.rs.api.version>2.1.1</javax.rs.api.version>
+        <javax.mail.version>1.5.0-b01</javax.mail.version>
         <javax.validation.validation-api.version>2.0.1.Final</javax.validation.validation-api.version>
         <javax.ws.rs-api.version>2.1.1</javax.ws.rs-api.version>
         <jboss-logging.version>3.4.1.Final</jboss-logging.version>
         <joda-time.version>2.10.5</joda-time.version>
         <junit.jupiter.version>5.6.0</junit.jupiter.version>
-        <junit.jupiter.version>5.6.0</junit.jupiter.version>
         <junit.version>4.12</junit.version>
-        <mockito.version>3.3.1</mockito.version>
-        <mockito.version>3.3.1</mockito.version>
+        <mockito.version>3.3.3</mockito.version>
         <net.jodah.lyra.version>0.5.5</net.jodah.lyra.version>
         <org.apache.httpcomponents.version>4.4.13</org.apache.httpcomponents.version>
         <org.apache.maven.shared.utils.version>0.2</org.apache.maven.shared.utils.version>
@@ -129,21 +133,19 @@
         <org.hibernate.jpa.api.version>1.0.0.Final</org.hibernate.jpa.api.version>
         <!--Hibernate version below is updated, but the latest version is throwing exception-->
         <!--<hibernate-validator.version>6.1.2.Final</hibernate-validator.version>-->
-        <!-- <hibernate-validator.version>5.4.3.Final</hibernate-validator.version> -->
+        <!-- <hibernate-validator.version>5.4.3.Final</hibernate-validator.version>
+         name is changed as it include more than validation api-->
         <org.hibernate.version>5.4.3.Final</org.hibernate.version>
         <org.json.version>20190722</org.json.version>
         <org.jvnet.mimepull.version>1.9.12</org.jvnet.mimepull.version>
         <org.keycloak.version>8.0.1</org.keycloak.version>
         <org.projectlombok.version>1.18.12</org.projectlombok.version>
-        <org.projectlombok.version>1.18.12</org.projectlombok.version>
         <org.reflections.version>0.9.11</org.reflections.version>
+        <org.slf4j.version>1.7.30</org.slf4j.version>
         <postgres.version>42.2.5</postgres.version>
         <resteasy.version>3.8.0.Final</resteasy.version>
         <servlet-api.version>4.0.1</servlet-api.version>
-        <slf4j.version>1.7.26</slf4j.version>
         <snakeyaml.version>1.26</snakeyaml.version>
-        <snakeyaml.version>1.26</snakeyaml.version>
-        <spring.version>5.2.4.RELEASE</spring.version>
         <swagger.version>1.5.23</swagger.version>
     </properties>
 
@@ -161,6 +163,19 @@
 
             <!--BOM dependencies-->
             <?SORTPOM IGNORE?>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-framework-bom</artifactId>
+                <version>${org.springframework.bom.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>spring-jcl</artifactId>
+                        <groupId>org.springframework</groupId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
             <!--Until we fix the WorkerFramework/worker-framework and CAFDataProcessing/worker-document. this needs
             to be on top-->
             <!--Don't move io.dropwizard bom for now before this. It'll break things-->
@@ -435,9 +450,29 @@
                 <version>${com.nitorcreations.junit.runners.version}</version>
             </dependency>
             <dependency>
+                <groupId>com.jayway.jsonpath</groupId>
+                <artifactId>json-path</artifactId>
+                <version>${com.jayway.jsonpath.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.mesosphere</groupId>
+                <artifactId>marathon-client</artifactId>
+                <version>${com.mesosphere.marathon-client.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>com.rabbitmq</groupId>
                 <artifactId>amqp-client</artifactId>
                 <version>${com.rabbitmq.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.squareup.okhttp</groupId>
+                <artifactId>okhttp</artifactId>
+                <version>${com.squareup.okhttp.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.squareup.retrofit</groupId>
+                <artifactId>retrofit</artifactId>
+                <version>${com.squareup.retrofit.version}</version>
             </dependency>
             <dependency>
                 <groupId>commons-codec</groupId>
@@ -505,6 +540,11 @@
                 <version>${swagger.version}</version>
             </dependency>
             <dependency>
+                <groupId>jakarta.validation</groupId>
+                <artifactId>jakarta.validation-api</artifactId>
+                <version>${jakarta.validation-api.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>javax.annotation</groupId>
                 <artifactId>javax.annotation-api</artifactId>
                 <version>${javax.annotation-api.version}</version>
@@ -513,6 +553,11 @@
                 <groupId>javax.servlet</groupId>
                 <artifactId>javax.servlet-api</artifactId>
                 <version>${servlet-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.mail</groupId>
+                <artifactId>mail</artifactId>
+                <version>${javax.mail.version}</version>
             </dependency>
             <dependency>
                 <groupId>javax.validation</groupId>
@@ -719,33 +764,12 @@
             <dependency>
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
-                <version>${slf4j.version}</version>
-            </dependency>
+                <version>${org.slf4j.version}</version>
+            </dependency>            
             <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-beans</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-context</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-core</artifactId>
-                <version>${spring.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <artifactId>spring-jcl</artifactId>
-                        <groupId>org.springframework</groupId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-web</artifactId>
-                <version>${spring.version}</version>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-simple</artifactId>
+                <version>${org.slf4j.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.yaml</groupId>
