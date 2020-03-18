@@ -67,46 +67,78 @@
         <copyrightNotice>Copyright ${copyrightYear} Micro Focus or one of its affiliates.</copyrightNotice>
 
         <!--BOM dependencies versions-->
-        <org.glassfish.jersey.bom.version>2.30.1</org.glassfish.jersey.bom.version>
-        <io.dropwizard.bom.version>2.0.2</io.dropwizard.bom.version>
+        <caf.worker-document-framework.bom.version>4.3.0-SCMOD-8829-SNAPSHOT</caf.worker-document-framework.bom.version>
+        <caf.worker-batch-framework.version>3.3.0-SNAPSHOT</caf.worker-batch-framework.version>
+        <caf.workerframework.version>3.3.0-SNAPSHOT</caf.workerframework.version>
         <com.fasterxml.jackson.bom.version>2.10.3</com.fasterxml.jackson.bom.version>
-        <caf.worker-document-framework.bom.version>4.3.0-SNAPSHOT</caf.worker-document-framework.bom.version>
+        <io.dropwizard.bom.version>2.0.2</io.dropwizard.bom.version>
+        <org.glassfish.jersey.bom.version>2.30.1</org.glassfish.jersey.bom.version>
+        <org.springframework.bom.version>5.2.4.RELEASE</org.springframework.bom.version>
 
         <!--Internal dependencies versions -->
         <caf-logging-logback.version>1.3.0-SNAPSHOT</caf-logging-logback.version>
         <caf-storage-service-client.version>6.1.0-SNAPSHOT</caf-storage-service-client.version>
 
         <!--Third party dependencies-->
+        <analyticsVersion>3.0.0-SNAPSHOT</analyticsVersion>
+        <antlr4-annotations.version>4.3</antlr4-annotations.version>
+        <antlr4-runtime.version>4.8-1</antlr4-runtime.version>
+        <c3p0.version>0.9.5.5</c3p0.version>
+        <classmate.version>1.5.1</classmate.version>
         <com.google.code.gson.version>2.8.6</com.google.code.gson.version>
         <com.google.guava.version>28.2-jre</com.google.guava.version>
+        <com.jayway.jsonpath.version>2.4.0</com.jayway.jsonpath.version>
+        <com.mesosphere.marathon-client.version>0.6.2</com.mesosphere.marathon-client.version>
         <com.rabbitmq.version>5.8.0</com.rabbitmq.version>
+        <com.squareup.okhttp.version>2.7.5</com.squareup.okhttp.version>
+        <com.squareup.retrofit.version>1.9.0</com.squareup.retrofit.version>
+        <commons-codec.version>1.14</commons-codec.version>
         <commons-io.version>2.6</commons-io.version>
         <commons-lang3.version>3.9</commons-lang3.version>
+        <documentid-api.version>1.6.0-SNAPSHOT</documentid-api.version>
         <documentid-db.version>1.3.0-196</documentid-db.version>
         <edkjni.version>12.4.2-rc</edkjni.version>
         <flyway-core.version>6.3.0</flyway-core.version>
         <h2.version>1.4.196</h2.version>
-        <hamcrest-all.version>1.3</hamcrest-all.version>
-        <hamcrest-core.version>2.2</hamcrest-core.version>
+        <hamcrest-all.version>1.3</hamcrest-all.version><hamcrest-core.version>2.2</hamcrest-core.version>
         <hdrhistogram.version>2.1.10</hdrhistogram.version>
-        <hibernate-validator.version>6.1.2.Final</hibernate-validator.version>
+
+        <!--Hibernate version below is updated,but the latest version is throwing exception-->
+        <!--<hibernate-validator.version>6.1.2.Final</hibernate-validator.version>-->
+        <hibernate-validator.version>5.4.3.Final</hibernate-validator.version>
+        <httpclient.version>4.5.11</httpclient.version>
+        <io.swagger.swagger-annotations.version>1.6.0</io.swagger.swagger-annotations.version>
+        <jakarta.validation-api.version>2.0.2</jakarta.validation-api.version>
+        <javassist.version>3.26.0-GA</javassist.version>
+        <javax.annotation-api.version>1.3.2</javax.annotation-api.version>
+        <javax.mail.version>1.5.0-b01</javax.mail.version>
+        <javax.validation.validation-api.version>2.0.1.Final</javax.validation.validation-api.version>
+        <javax.ws.rs-api.version>2.1.1</javax.ws.rs-api.version>
+        <jboss-logging.version>3.4.1.Final</jboss-logging.version>
+        <jersey-version>1.19</jersey-version>
+        <jetty.bom.version>9.4.20.v20190813</jetty.bom.version>
+        <joda-time.version>2.10.5</joda-time.version>
+        <jsr311-api.version>1.1.1</jsr311-api.version>
+        <junit.version>4.13</junit.version>
         <junit.jupiter.version>5.6.0</junit.jupiter.version>
-        <mockito.version>3.3.1</mockito.version>
+        <mockito.version>3.3.3</mockito.version>
+        <nv-i18n.version>1.27</nv-i18n.version>
+        <okio.version>2.4.3</okio.version>
+        <org.apache.httpcomponents.version>4.4.13</org.apache.httpcomponents.version>
+        <org.json.version>20190722</org.json.version>
         <org.projectlombok.version>1.18.12</org.projectlombok.version>
+        <org.slf4j.version>1.7.30</org.slf4j.version>
         <persistence-api.version>2.2</persistence-api.version>
         <postgresql.version>42.2.10.jre7</postgresql.version>
         <reflections.version>0.9.11</reflections.version>
         <snakeyaml.version>1.26</snakeyaml.version>
-        <javax.validation.validation-api.version>2.0.1.Final</javax.validation.validation-api.version>
-        <javax.ws.rs-api.version>2.1.1</javax.ws.rs-api.version>
-        <io.swagger.swagger-annotations.version>1.6.0</io.swagger.swagger-annotations.version>
-        <jboss-logging.version>3.4.1.Final</jboss-logging.version>
-        <joda-time.version>2.10.5</joda-time.version>
-        <javax.annotation-api.version>1.3.2</javax.annotation-api.version>
-        <commons-codec.version>1.14</commons-codec.version>
-        <!--Hibernate version below is updated, but the latest version is throwing exception-->
-        <!--<hibernate-validator.version>6.1.2.Final</hibernate-validator.version>-->
-        <hibernate-validator.version>5.4.3.Final</hibernate-validator.version>
+        <sqlbuilder.version>3.0.0</sqlbuilder.version>
+        <swagger.client.templates.version>1.0.0-SNAPSHOT</swagger.client.templates.version>
+        <swagger-jersey-jaxrs.version>1.5.21</swagger-jersey-jaxrs.version>
+        <swagger-ui-version>3.23.10</swagger-ui-version>
+        <swagger.ui.cafapi.version>1.0.0-SNAPSHOT</swagger.ui.cafapi.version>
+        <tomcat-embed-core.version>9.0.31</tomcat-embed-core.version>
+
     </properties>
 
     <dependencyManagement>
@@ -120,13 +152,16 @@
             - Make sure to have xxx.version property defined in the properties section above. Don't use the version
             number directly in the dependencies. The reason for that is we can run "mvn versions:update-properties"
             command which sets properties to the latest versions of specific artifacts. -->
+
             <!--BOM dependencies-->
-            <dependency>
-                <groupId>commons-codec</groupId>
-                <artifactId>commons-codec</artifactId>
-                <version>1.14</version>
-            </dependency>
             <?SORTPOM IGNORE?>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-framework-bom</artifactId>
+                <version>${org.springframework.bom.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
             <!--Until we fix the WorkerFramework/worker-framework and CAFDataProcessing/worker-document. this needs
             to be on top-->
             <!--Don't move io.dropwizard bom for now before this. It'll break things-->
@@ -215,6 +250,21 @@
                 <version>${caf-logging-logback.version}</version>
             </dependency>
             <dependency>
+                <groupId>com.github.jobservice</groupId>
+                <artifactId>job-service-client2</artifactId>
+                <version>3.1.0-578</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.jobservice</groupId>
+                <artifactId>worker-batch</artifactId>
+                <version>${caf.worker-batch-framework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.jobservice</groupId>
+                <artifactId>worker-batch-extensibility</artifactId>
+                <version>${caf.worker-batch-framework.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>com.github.joschi.jackson</groupId>
                 <artifactId>jackson-datatype-threetenbp</artifactId>
                 <version>${jackson.threetenbp}</version>
@@ -228,6 +278,11 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>${com.google.guava.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hpe.caf</groupId>
+                <artifactId>documentid-api</artifactId>
+                <version>${documentid-api.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.h2database</groupId>
@@ -246,6 +301,16 @@
                 <classifier>jar-with-dependencies</classifier>
             </dependency>
             <dependency>
+                <groupId>com.hpe.caf</groupId>
+                <artifactId>rest-client</artifactId>
+                <version>1.7.0-15</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hpe.caf.analytics</groupId>
+                <artifactId>analytics-shared</artifactId>
+                <version>${analyticsVersion}</version>
+            </dependency>
+            <dependency>
                 <groupId>com.hpe.caf.analytics</groupId>
                 <artifactId>aspen-dropwizard-spring</artifactId>
                 <version>${analyticsVersion}</version>
@@ -261,14 +326,34 @@
                 <version>${analyticsVersion}</version>
             </dependency>
             <dependency>
+                <groupId>com.hpe.caf.messagebuilder</groupId>
+                <artifactId>document-message-builder</artifactId>
+                <version>1.2.0-15</version>
+            </dependency>
+            <dependency>
                 <groupId>com.hpe.caf.storage</groupId>
                 <artifactId>caf-storage-service-client</artifactId>
                 <version>${caf-storage-service-client.version}</version>
             </dependency>
             <dependency>
+                <groupId>com.hpe.caf.worker.batch</groupId>
+                <artifactId>worker-batch-shared</artifactId>
+                <version>1.13.0-51</version>
+            </dependency>
+            <dependency>
+                <groupId>com.jayway.jsonpath</groupId>
+                <artifactId>json-path</artifactId>
+                <version>${com.jayway.jsonpath.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>com.mchange</groupId>
                 <artifactId>c3p0</artifactId>
                 <version>${c3p0.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.mesosphere</groupId>
+                <artifactId>marathon-client</artifactId>
+                <version>${com.mesosphere.marathon-client.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.microfocus.caf.eduction</groupId>
@@ -288,17 +373,22 @@
             <dependency>
                 <groupId>com.squareup.okhttp</groupId>
                 <artifactId>logging-interceptor</artifactId>
-                <version>${okhttp-version}</version>
+                <version>${com.squareup.okhttp.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.squareup.okhttp</groupId>
                 <artifactId>okhttp</artifactId>
-                <version>${okhttp-version}</version>
+                <version>${com.squareup.okhttp.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.squareup.okio</groupId>
                 <artifactId>okio</artifactId>
                 <version>${okio.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.squareup.retrofit</groupId>
+                <artifactId>retrofit</artifactId>
+                <version>${com.squareup.retrofit.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.sun.jersey</groupId>
@@ -321,9 +411,24 @@
                 <version>${commons-io.version}</version>
             </dependency>
             <dependency>
+                <groupId>commons-logging</groupId>
+                <artifactId>commons-logging</artifactId>
+                <version>1.2</version>
+            </dependency>
+            <dependency>
                 <groupId>io.swagger</groupId>
                 <artifactId>swagger-annotations</artifactId>
                 <version>${io.swagger.swagger-annotations.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-jersey-jaxrs</artifactId>
+                <version>${swagger-jersey-jaxrs.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.validation</groupId>
+                <artifactId>jakarta.validation-api</artifactId>
+                <version>${jakarta.validation-api.version}</version>
             </dependency>
             <dependency>
                 <groupId>javax.annotation</groupId>
@@ -331,29 +436,14 @@
                 <version>${javax.annotation-api.version}</version>
             </dependency>
             <dependency>
-                <groupId>javax.validation</groupId>
-                <artifactId>validation-api</artifactId>
-                <version>${javax.validation.validation-api.version}</version>
+                <groupId>javax.mail</groupId>
+                <artifactId>mail</artifactId>
+                <version>${javax.mail.version}</version>
             </dependency>
             <dependency>
-                <groupId>javax.ws.rs</groupId>
-                <artifactId>javax.ws.rs-api</artifactId>
-                <version>${javax.ws.rs-api.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>joda-time</groupId>
-                <artifactId>joda-time</artifactId>
-                <version>${joda-time.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.swagger</groupId>
-                <artifactId>swagger-annotations</artifactId>
-                <version>${swagger-version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.swagger</groupId>
-                <artifactId>swagger-jersey-jaxrs</artifactId>
-                <version>${swagger-jersey-jaxrs.version}</version>
+                <groupId>javax.mail</groupId>
+                <artifactId>mailapi</artifactId>
+                <version>1.4.3</version>
             </dependency>
             <dependency>
                 <groupId>javax.persistence</groupId>
@@ -363,7 +453,7 @@
             <dependency>
                 <groupId>javax.validation</groupId>
                 <artifactId>validation-api</artifactId>
-                <version>${validation-api.version}</version>
+                <version>${javax.validation.validation-api.version}</version>
             </dependency>
             <dependency>
                 <groupId>javax.ws.rs</groupId>
@@ -408,12 +498,17 @@
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpcore</artifactId>
-                <version>${httpcore.version}</version>
+                <version>${org.apache.httpcomponents.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.tomcat.embed</groupId>
                 <artifactId>tomcat-embed-core</artifactId>
                 <version>${tomcat-embed-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-core</artifactId>
+                <version>${flyway-core.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.hamcrest</groupId>
@@ -426,9 +521,19 @@
                 <version>${hamcrest-core.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>${hibernate-validator.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.hdrhistogram</groupId>
                 <artifactId>HdrHistogram</artifactId>
                 <version>${hdrhistogram.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jadira.usertype</groupId>
+                <artifactId>usertype.spi</artifactId>
+                <version>7.0.0.CR1</version>
             </dependency>
             <dependency>
                 <groupId>org.javassist</groupId>
@@ -441,9 +546,9 @@
                 <version>${jboss-logging.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.jboss.logging</groupId>
-                <artifactId>jboss-logging</artifactId>
-                <version>${jboss-logging.version}</version>
+                <groupId>org.json</groupId>
+                <artifactId>json</artifactId>
+                <version>${org.json.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.junit.jupiter</groupId>
@@ -486,6 +591,11 @@
                 <version>${reflections.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-simple</artifactId>
+                <version>${org.slf4j.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.threeten</groupId>
                 <artifactId>threetenbp</artifactId>
                 <version>${threetenbp.version}</version>
@@ -499,56 +609,6 @@
                 <groupId>org.yaml</groupId>
                 <artifactId>snakeyaml</artifactId>
                 <version>${snakeyaml.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.jobservice</groupId>
-                <artifactId>job-service-client2</artifactId>
-                <version>3.1.0-578</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.jobservice</groupId>
-                <artifactId>worker-batch-extensibility</artifactId>
-                <version>${caf.worker-batch-framework.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.hpe.caf.analytics</groupId>
-                <artifactId>analytics-shared</artifactId>
-                <version>${analyticsVersion}</version>
-            </dependency>
-             <dependency>
-                <groupId>com.hpe.caf.messagebuilder</groupId>
-                <artifactId>document-message-builder</artifactId>
-                <version>1.2.0-15</version>
-            </dependency>
-             <dependency>
-                <groupId>com.hpe.caf.worker.batch</groupId>
-                <artifactId>worker-batch-shared</artifactId>
-                <version>1.13.0-51</version>
-            </dependency>
-             <dependency>
-                <groupId>commons-logging</groupId>
-                <artifactId>commons-logging</artifactId>
-                <version>1.2</version>
-            </dependency>
-            <dependency>
-                <groupId>javax.mail</groupId>
-                <artifactId>mailapi</artifactId>
-                <version>1.4.3</version>
-            </dependency>
-            <dependency>
-                <groupId>org.jadira.usertype</groupId>
-                <artifactId>usertype.spi</artifactId>
-                <version>7.0.0.CR1</version>
-            </dependency>
-            <dependency>
-                <groupId>com.hpe.caf</groupId>
-                <artifactId>rest-client</artifactId>
-                <version>1.7.0-15</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.jobservice</groupId>
-                <artifactId>worker-batch</artifactId>
-                <version>${caf.worker-batch-framework.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
