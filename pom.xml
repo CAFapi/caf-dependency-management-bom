@@ -67,86 +67,84 @@
         <copyrightNotice>Copyright ${copyrightYear} Micro Focus or one of its affiliates.</copyrightNotice>
 
         <!--BOM dependencies versions-->
-        <org.glassfish.jersey.bom.version>2.30.1</org.glassfish.jersey.bom.version>
-        <io.dropwizard.bom.version>2.0.2</io.dropwizard.bom.version>
-        <com.fasterxml.jackson.bom.version>2.10.3</com.fasterxml.jackson.bom.version>
         <caf.worker-document-framework.bom.version>4.3.0-SNAPSHOT</caf.worker-document-framework.bom.version>
-        
+        <com.fasterxml.jackson.bom.version>2.10.3</com.fasterxml.jackson.bom.version>
+        <io.dropwizard.bom.version>2.0.2</io.dropwizard.bom.version>
+        <org.glassfish.jersey.bom.version>2.30.1</org.glassfish.jersey.bom.version>
+
         <!--Internal dependencies versions -->
+        <analytics.aspen-dropwizard-spring.version>2.3.0-558</analytics.aspen-dropwizard-spring.version>
+        <aspen.data-enrichment-shared.version>3.1.0-743</aspen.data-enrichment-shared.version>
+        <caf-audit.version>3.4.0-380</caf-audit.version>
         <caf-logging-logback.version>1.3.0-SNAPSHOT</caf-logging-logback.version>
         <caf-storage-service-client.version>6.1.0-SNAPSHOT</caf-storage-service-client.version>
-        <caf.worker-framework.version>3.3.0-SNAPSHOT</caf.worker-framework.version>
-        <analytics.aspen-dropwizard-spring.version>2.3.0-558</analytics.aspen-dropwizard-spring.version>
-        <idm-components.version>1.4.0-SNAPSHOT</idm-components.version>
-        <verity-components.version>3.2.0-SNAPSHOT</verity-components.version>
-        <aspen.data-enrichment-shared.version>3.1.0-743</aspen.data-enrichment-shared.version>
-        <aspen.analytics-lib.version>3.1.0-709</aspen.analytics-lib.version>
-        <caf-audit.version>3.4.0-380</caf-audit.version>
+        <caf.rest-client.version>1.7.0-15</caf.rest-client.version>
         <caf.worker-batch-framework.version>3.2.0-256</caf.worker-batch-framework.version>
+        <caf.worker-framework.version>3.3.0-SNAPSHOT</caf.worker-framework.version>
         <com.github.cafapi.version>1.17.0-201</com.github.cafapi.version>
-
+        <com.github.jobservice.client2.version>3.1.0-578</com.github.jobservice.client2.version>
+        <com.microfocus.darwin.system-user-lib.version>3.1.0-SNAPSHOT</com.microfocus.darwin.system-user-lib.version>
+        <idm-components.version>1.4.0-SNAPSHOT</idm-components.version>
+        <verity.common-lib.version>3.2.0-SNAPSHOT</verity.common-lib.version>
 
         <!-- Third party dependencies -->
+
+        <collection-center.version>3.2.0-SNAPSHOT</collection-center.version>
         <com.google.code.gson.version>2.8.6</com.google.code.gson.version>
         <com.google.guava.version>28.2-jre</com.google.guava.version>
+        <com.nitorcreations.junit.runners.version>1.3</com.nitorcreations.junit.runners.version>
         <com.rabbitmq.version>5.8.0</com.rabbitmq.version>
+        <commons-codec.version>1.14</commons-codec.version>
         <commons-io.version>2.6</commons-io.version>
-        <hamcrest-all.version>1.3</hamcrest-all.version>
-        <hibernate.version>6.1.2.Final</hibernate.version>
-        <org.projectlombok.version>1.18.12</org.projectlombok.version>
-        <snakeyaml.version>1.26</snakeyaml.version>
-        <org.eclipse.jetty.bom..version>9.4.20.v20190813</org.eclipse.jetty.bom..version>
         <commons-lang3.version>3.8.1</commons-lang3.version>
-        <slf4j.version>1.7.26</slf4j.version>
-        <idm-components.version>1.4.0-SNAPSHOT</idm-components.version>
-        <spring.version>5.2.3.RELEASE</spring.version>
-        <ed.version>1.6.3-30</ed.version>
-        <org.hibernate.jpa.api.version>1.0.0.Final</org.hibernate.jpa.api.version>
-        <dropwizard.version>1.3.16</dropwizard.version>
-        <junit.jupiter.version>5.6.0</junit.jupiter.version>
-        <mockito.version>3.3.1</mockito.version>
-        <junit.version>4.12</junit.version>
-        <org.apache.httpcomponents.version>4.4.13</org.apache.httpcomponents.version>
-        <org.jvnet.mimepull.version>1.9.12</org.jvnet.mimepull.version>
-        <servlet-api.version>4.0.1</servlet-api.version>
-        <org.keycloak.version>8.0.1</org.keycloak.version>
-        <swagger.version>1.5.23</swagger.version>
         <dropwizard-metrics.version>4.0.5</dropwizard-metrics.version>
+        <dropwizard.version>1.3.16</dropwizard.version>
+        <ed.version>1.6.3-30</ed.version>
+        <ftplet-api.version>1.1.1</ftplet-api.version>
         <gson.version>2.8.5</gson.version>
         <guava.version>28.0-jre</guava.version>
-        <org.glassfish.jersey.version>2.25.1</org.glassfish.jersey.version>
-        <net.jodah.lyra.version>0.5.5</net.jodah.lyra.version>
-        <org.json.version>20190722</org.json.version>
-        <com.microfocus.darwin.system-user-lib.version>3.1.0-SNAPSHOT</com.microfocus.darwin.system-user-lib.version>
-        <com.github.jobservice.client2.version>3.1.0-578</com.github.jobservice.client2.version>
-        <caf.rest-client.version>1.7.0-15</caf.rest-client.version>
-        <com.nitorcreations.junit.runners.version>1.3</com.nitorcreations.junit.runners.version>
-        <org.easymock.version>4.2</org.easymock.version>
-        <org.assertj.core.version>3.15.0</org.assertj.core.version>
-        <collection-center.version>3.2.0-SNAPSHOT</collection-center.version>
-        <javax.rs.api.version>2.1.1</javax.rs.api.version>
-        <resteasy.version>3.6.1.Final</resteasy.version>
-        <httpmime.version>4.5.5</httpmime.version>
+        <hamcrest-all.version>1.3</hamcrest-all.version>
         <httpclient.version>4.5.5</httpclient.version>
-        <org.hibernate.core.version>5.4.2.Final</org.hibernate.core.version>
-        <postgres.version>42.2.5</postgres.version>
-        <org.reflections.version>0.9.11</org.reflections.version>
-        <org.apache.mina.core.version>2.0.21</org.apache.mina.core.version>
-        <ftplet-api.version>1.1.1</ftplet-api.version>
-        <org.apache.maven.shared.utils.version>0.2</org.apache.maven.shared.utils.version>
-        <junit.jupiter.version>5.6.0</junit.jupiter.version>
-        <mockito.version>3.3.1</mockito.version>
-        <org.projectlombok.version>1.18.12</org.projectlombok.version>
-        <snakeyaml.version>1.26</snakeyaml.version>
+        <httpmime.version>4.5.5</httpmime.version>
+        <idm-components.version>1.4.0-SNAPSHOT</idm-components.version>
+        <javax.annotation-api.version>1.3.2</javax.annotation-api.version>
+        <javax.rs.api.version>2.1.1</javax.rs.api.version>
         <javax.validation.validation-api.version>2.0.1.Final</javax.validation.validation-api.version>
         <javax.ws.rs-api.version>2.1.1</javax.ws.rs-api.version>
         <jboss-logging.version>3.4.1.Final</jboss-logging.version>
         <joda-time.version>2.10.5</joda-time.version>
-        <javax.annotation-api.version>1.3.2</javax.annotation-api.version>
-        <commons-codec.version>1.14</commons-codec.version>
+        <junit.jupiter.version>5.6.0</junit.jupiter.version>
+        <junit.jupiter.version>5.6.0</junit.jupiter.version>
+        <junit.version>4.12</junit.version>
+        <mockito.version>3.3.1</mockito.version>
+        <mockito.version>3.3.1</mockito.version>
+        <net.jodah.lyra.version>0.5.5</net.jodah.lyra.version>
+        <org.apache.httpcomponents.version>4.4.13</org.apache.httpcomponents.version>
+        <org.apache.maven.shared.utils.version>0.2</org.apache.maven.shared.utils.version>
+        <org.apache.mina.core.version>2.0.21</org.apache.mina.core.version>
+        <org.assertj.core.version>3.15.0</org.assertj.core.version>
+        <org.easymock.version>4.2</org.easymock.version>
+        <org.eclipse.jetty.bom..version>9.4.20.v20190813</org.eclipse.jetty.bom..version>
+        <org.glassfish.jersey.version>2.25.1</org.glassfish.jersey.version>
+        <org.hibernate.jpa.api.version>1.0.0.Final</org.hibernate.jpa.api.version>
         <!--Hibernate version below is updated, but the latest version is throwing exception-->
         <!--<hibernate-validator.version>6.1.2.Final</hibernate-validator.version>-->
-        <hibernate-validator.version>5.4.3.Final</hibernate-validator.version>
+        <!-- <hibernate-validator.version>5.4.3.Final</hibernate-validator.version> -->
+        <org.hibernate.version>5.4.3.Final</org.hibernate.version>
+        <org.json.version>20190722</org.json.version>
+        <org.jvnet.mimepull.version>1.9.12</org.jvnet.mimepull.version>
+        <org.keycloak.version>8.0.1</org.keycloak.version>
+        <org.projectlombok.version>1.18.12</org.projectlombok.version>
+        <org.projectlombok.version>1.18.12</org.projectlombok.version>
+        <org.reflections.version>0.9.11</org.reflections.version>
+        <postgres.version>42.2.5</postgres.version>
+        <resteasy.version>3.8.0.Final</resteasy.version>
+        <servlet-api.version>4.0.1</servlet-api.version>
+        <slf4j.version>1.7.26</slf4j.version>
+        <snakeyaml.version>1.26</snakeyaml.version>
+        <snakeyaml.version>1.26</snakeyaml.version>
+        <spring.version>5.2.4.RELEASE</spring.version>
+        <swagger.version>1.5.23</swagger.version>
     </properties>
 
     <dependencyManagement>
@@ -203,9 +201,120 @@
 
             <!--Other dependencies-->
             <dependency>
+                <groupId>com.github.cafapi</groupId>
+                <artifactId>caf-api</artifactId>
+                <version>${com.github.cafapi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.cafapi</groupId>
+                <artifactId>container-cert-script</artifactId>
+                <version>${com.github.cafapi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.cafapi.cipher</groupId>
+                <artifactId>cipher-null</artifactId>
+                <version>${com.github.cafapi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.cafapi.codec</groupId>
+                <artifactId>codec-json</artifactId>
+                <version>${com.github.cafapi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.cafapi.config</groupId>
+                <artifactId>config-decoder</artifactId>
+                <version>${com.github.cafapi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.cafapi.config</groupId>
+                <artifactId>config-file</artifactId>
+                <version>${com.github.cafapi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.cafapi.config</groupId>
+                <artifactId>config-system</artifactId>
+                <version>${com.github.cafapi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.cafapi.decoder</groupId>
+                <artifactId>decoder-js</artifactId>
+                <version>${com.github.cafapi.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>com.github.cafapi.logging</groupId>
                 <artifactId>caf-logging-logback</artifactId>
                 <version>${caf-logging-logback.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.cafapi.util</groupId>
+                <artifactId>util-moduleloader</artifactId>
+                <version>${com.github.cafapi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.cafapi.util</groupId>
+                <artifactId>util-naming</artifactId>
+                <version>${com.github.cafapi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.cafaudit</groupId>
+                <artifactId>caf-audit</artifactId>
+                <version>${caf-audit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.jobservice</groupId>
+                <artifactId>job-service-client2</artifactId>
+                <version>${com.github.jobservice.client2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.jobservice</groupId>
+                <artifactId>worker-batch</artifactId>
+                <version>${caf.worker-batch-framework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.jobservice</groupId>
+                <artifactId>worker-batch-extensibility</artifactId>
+                <version>${caf.worker-batch-framework.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>*</artifactId>
+                        <groupId>io.dropwizard</groupId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>com.github.jobservice</groupId>
+                <artifactId>worker-batch-framework</artifactId>
+                <version>${caf.worker-batch-framework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.jobservice</groupId>
+                <artifactId>worker-batch-shared</artifactId>
+                <version>${caf.worker-batch-framework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.workerframework</groupId>
+                <artifactId>util-rabbitmq</artifactId>
+                <version>${caf.worker-framework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.workerframework</groupId>
+                <artifactId>worker-configs</artifactId>
+                <version>${caf.worker-framework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.workerframework</groupId>
+                <artifactId>worker-core</artifactId>
+                <version>${caf.worker-framework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.workerframework</groupId>
+                <artifactId>worker-queue-rabbit</artifactId>
+                <version>${caf.worker-framework.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.workerframework</groupId>
+                <artifactId>worker-store-fs</artifactId>
+                <version>${caf.worker-framework.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.google.code.gson</groupId>
@@ -218,9 +327,112 @@
                 <version>${com.google.guava.version}</version>
             </dependency>
             <dependency>
+                <groupId>com.hpe.aspen</groupId>
+                <artifactId>analytics-lib</artifactId>
+                <version>${verity.common-lib.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hpe.aspen</groupId>
+                <artifactId>app-resources-lib</artifactId>
+                <version>${verity.common-lib.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hpe.aspen</groupId>
+                <artifactId>aspen-utils</artifactId>
+                <version>${verity.common-lib.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hpe.aspen</groupId>
+                <artifactId>collection-center-shared</artifactId>
+                <version>${collection-center.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hpe.aspen</groupId>
+                <artifactId>common-entities</artifactId>
+                <version>${verity.common-lib.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hpe.aspen</groupId>
+                <artifactId>data-enrichment-shared</artifactId>
+                <version>${aspen.data-enrichment-shared.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hpe.aspen</groupId>
+                <artifactId>ed-api</artifactId>
+                <version>${ed.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hpe.aspen</groupId>
+                <artifactId>keycloak-lib</artifactId>
+                <version>${idm-components.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>*</artifactId>
+                        <groupId>io.dropwizard</groupId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>com.hpe.caf</groupId>
+                <artifactId>rest-client</artifactId>
+                <version>${caf.rest-client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hpe.caf.analytics</groupId>
+                <artifactId>aspen-dropwizard-spring</artifactId>
+                <version>${analytics.aspen-dropwizard-spring.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>idm-lib</artifactId>
+                        <groupId>com.hpe.aspen</groupId>
+                    </exclusion>
+                    <exclusion>
+                        <artifactId>*</artifactId>
+                        <groupId>com.google.guava</groupId>
+                    </exclusion>
+                    <exclusion>
+                        <artifactId>*</artifactId>
+                        <groupId>org.hibernate</groupId>
+                    </exclusion>
+                    <exclusion>
+                        <artifactId>*</artifactId>
+                        <groupId>io.dropwizard</groupId>
+                    </exclusion>
+                    <exclusion>
+                        <artifactId>*</artifactId>
+                        <groupId>io.swagger</groupId>
+                    </exclusion>
+                    <exclusion>
+                        <artifactId>*</artifactId>
+                        <groupId>org.springframework</groupId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
                 <groupId>com.hpe.caf.storage</groupId>
                 <artifactId>caf-storage-service-client</artifactId>
                 <version>${caf-storage-service-client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hpe.darwin.idm</groupId>
+                <artifactId>idm-neo</artifactId>
+                <version>${idm-components.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>*</artifactId>
+                        <groupId>org.jboss.resteasy</groupId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>com.microfocus.darwin</groupId>
+                <artifactId>system-user-lib</artifactId>
+                <version>${com.microfocus.darwin.system-user-lib.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.nitorcreations</groupId>
+                <artifactId>junit-runners</artifactId>
+                <version>${com.nitorcreations.junit.runners.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.rabbitmq</groupId>
@@ -238,170 +450,13 @@
                 <version>${commons-io.version}</version>
             </dependency>
             <dependency>
-                <groupId>javax.annotation</groupId>
-                <artifactId>javax.annotation-api</artifactId>
-                <version>${javax.annotation-api.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>javax.validation</groupId>
-                <artifactId>validation-api</artifactId>
-                <version>${javax.validation.validation-api.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>javax.ws.rs</groupId>
-                <artifactId>javax.ws.rs-api</artifactId>
-                <version>${javax.ws.rs-api.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>joda-time</groupId>
-                <artifactId>joda-time</artifactId>
-                <version>${joda-time.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.hamcrest</groupId>
-                <artifactId>hamcrest-all</artifactId>
-                <version>${hamcrest-all.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.hibernate</groupId>
-                <artifactId>hibernate-validator</artifactId>
-                <version>${hibernate.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.jboss.logging</groupId>
-                <artifactId>jboss-logging</artifactId>
-                <version>${jboss-logging.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.junit.jupiter</groupId>
-                <artifactId>junit-jupiter-api</artifactId>
-                <version>${junit.jupiter.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.junit.jupiter</groupId>
-                <artifactId>junit-jupiter-engine</artifactId>
-                <version>${junit.jupiter.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.junit.jupiter</groupId>
-                <artifactId>junit-jupiter-params</artifactId>
-                <version>${junit.jupiter.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.mockito</groupId>
-                <artifactId>mockito-core</artifactId>
-                <version>${mockito.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.mockito</groupId>
-                <artifactId>mockito-junit-jupiter</artifactId>
-                <version>${mockito.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>${org.projectlombok.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.yaml</groupId>
-                <artifactId>snakeyaml</artifactId>
-                <version>${snakeyaml.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-bom</artifactId>
-                <version>${org.eclipse.jetty.bom.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-lang3</artifactId>
-                <version>${commons-lang3.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-api</artifactId>
-                <version>${slf4j.version}</version>
+                <groupId>io.dropwizard</groupId>
+                <artifactId>dropwizard-assets</artifactId>
+                <version>${dropwizard.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.dropwizard</groupId>
                 <artifactId>dropwizard-bom</artifactId>
-                <version>${dropwizard.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.jobservice</groupId>
-                <artifactId>worker-batch-framework</artifactId>
-                <version>${caf.worker-batch-framework.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.jobservice</groupId>
-                <artifactId>worker-batch</artifactId>
-                <version>${caf.worker-batch-framework.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-web</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-core</artifactId>
-                <version>${spring.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.springframework</groupId>
-                        <artifactId>spring-jcl</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-context</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-beans</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.httpcomponents</groupId>
-                <artifactId>httpcore</artifactId>
-                <version>${org.apache.httpcomponents.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.jvnet.mimepull</groupId>
-                <artifactId>mimepull</artifactId>
-                <version>${org.jvnet.mimepull.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-admin-client</artifactId>
-                <version>${org.keycloak.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>commons-logging</groupId>
-                        <artifactId>commons-logging</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>io.swagger</groupId>
-                <artifactId>swagger-jaxrs</artifactId>
-                <version>${swagger.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.swagger</groupId>
-                <artifactId>swagger-annotations</artifactId>
-                <version>${swagger.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.dropwizard</groupId>
-                <artifactId>dropwizard-core</artifactId>
-                <version>${dropwizard.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.dropwizard</groupId>
-                <artifactId>dropwizard-assets</artifactId>
                 <version>${dropwizard.version}</version>
             </dependency>
             <dependency>
@@ -412,6 +467,16 @@
             <dependency>
                 <groupId>io.dropwizard</groupId>
                 <artifactId>dropwizard-configuration</artifactId>
+                <version>${dropwizard.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.dropwizard</groupId>
+                <artifactId>dropwizard-core</artifactId>
+                <version>${dropwizard.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.dropwizard</groupId>
+                <artifactId>dropwizard-jersey</artifactId>
                 <version>${dropwizard.version}</version>
             </dependency>
             <dependency>
@@ -430,9 +495,19 @@
                 <version>${dropwizard-metrics.version}</version>
             </dependency>
             <dependency>
-                <groupId>io.dropwizard</groupId>
-                <artifactId>dropwizard-jersey</artifactId>
-                <version>${dropwizard.version}</version>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-annotations</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-jaxrs</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.annotation</groupId>
+                <artifactId>javax.annotation-api</artifactId>
+                <version>${javax.annotation-api.version}</version>
             </dependency>
             <dependency>
                 <groupId>javax.servlet</groupId>
@@ -440,89 +515,19 @@
                 <version>${servlet-api.version}</version>
             </dependency>
             <dependency>
-                <groupId>net.jodah</groupId>
-                <artifactId>lyra</artifactId>
-                <version>${net.jodah.lyra.version}</version>
+                <groupId>javax.validation</groupId>
+                <artifactId>validation-api</artifactId>
+                <version>${javax.validation.validation-api.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.github.jobservice</groupId>
-                <artifactId>worker-batch-shared</artifactId>
-                <version>${caf.worker-batch-framework.version}</version>
+                <groupId>javax.ws.rs</groupId>
+                <artifactId>javax.ws.rs-api</artifactId>
+                <version>${javax.ws.rs-api.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.github.workerframework</groupId>
-                <artifactId>util-rabbitmq</artifactId>
-                <version>${caf.worker-framework.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.workerframework</groupId>
-                <artifactId>worker-configs</artifactId>
-                <version>${caf.worker-framework.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.jobservice</groupId>
-                <artifactId>job-service-client2</artifactId>
-                <version>${com.github.jobservice.client2.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.cafapi.util</groupId>
-                <artifactId>util-naming</artifactId>
-                <version>${com.github.cafapi.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.json</groupId>
-                <artifactId>json</artifactId>
-                <version>${org.json.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.cafapi.util</groupId>
-                <artifactId>util-moduleloader</artifactId>
-                <version>${com.github.cafapi.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.cafapi.config</groupId>
-                <artifactId>config-system</artifactId>
-                <version>${com.github.cafapi.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.cafapi.config</groupId>
-                <artifactId>config-file</artifactId>
-                <version>${com.github.cafapi.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.cafapi.config</groupId>
-                <artifactId>config-decoder</artifactId>
-                <version>${com.github.cafapi.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.cafapi.cipher</groupId>
-                <artifactId>cipher-null</artifactId>
-                <version>${com.github.cafapi.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.cafapi</groupId>
-                <artifactId>caf-api</artifactId>
-                <version>${com.github.cafapi.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.cafapi.decoder</groupId>
-                <artifactId>decoder-js</artifactId>
-                <version>${com.github.cafapi.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.cafapi</groupId>
-                <artifactId>container-cert-script</artifactId>
-                <version>${com.github.cafapi.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.microfocus.darwin</groupId>
-                <artifactId>system-user-lib</artifactId>
-                <version>${com.microfocus.darwin.system-user-lib.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.cafapi.codec</groupId>
-                <artifactId>codec-json</artifactId>
-                <version>${com.github.cafapi.version}</version>
+                <groupId>joda-time</groupId>
+                <artifactId>joda-time</artifactId>
+                <version>${joda-time.version}</version>
             </dependency>
             <dependency>
                 <groupId>junit</groupId>
@@ -530,209 +535,14 @@
                 <version>${junit.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.nitorcreations</groupId>
-                <artifactId>junit-runners</artifactId>
-                <version>${com.nitorcreations.junit.runners.version}</version>
+                <groupId>net.jodah</groupId>
+                <artifactId>lyra</artifactId>
+                <version>${net.jodah.lyra.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.easymock</groupId>
-                <artifactId>easymock</artifactId>
-                <version>${org.easymock.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.assertj</groupId>
-                <artifactId>assertj-core</artifactId>
-                <version>${org.assertj.core.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.hpe.aspen</groupId>
-                <artifactId>collection-center-shared</artifactId>
-                <version>${collection-center.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.hpe.aspen</groupId>
-                <artifactId>app-resources-lib</artifactId>
-                <version>${verity-components.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.hpe.caf.analytics</groupId>
-                <artifactId>aspen-dropwizard-spring</artifactId>
-                <version>${analytics.aspen-dropwizard-spring.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>com.hpe.aspen</groupId>
-                        <artifactId>idm-lib</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>com.google.guava</groupId>
-                        <artifactId>*</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.hibernate</groupId>
-                        <artifactId>*</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>io.dropwizard</groupId>
-                        <artifactId>*</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>io.swagger</groupId>
-                        <artifactId>*</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.springframework</groupId>
-                        <artifactId>*</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-core</artifactId>
-                <version>${org.keycloak.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.keycloak</groupId>
-                <artifactId>keycloak-common</artifactId>
-                <version>${org.keycloak.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.hpe.darwin.idm</groupId>
-                <artifactId>idm-neo</artifactId>
-                <version>${idm-components.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.jboss.resteasy</groupId>
-                        <artifactId>*</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>com.hpe.aspen</groupId>
-                <artifactId>keycloak-lib</artifactId>
-                <version>${idm-components.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>io.dropwizard</groupId>
-                        <artifactId>*</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>org.jboss.resteasy</groupId>
-                <artifactId>resteasy-client</artifactId>
-                <version>${resteasy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.jboss.resteasy</groupId>
-                <artifactId>resteasy-jackson2-provider</artifactId>
-                <version>${resteasy.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.httpcomponents</groupId>
-                <artifactId>httpmime</artifactId>
-                <version>${httpmime.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.httpcomponents</groupId>
-                <artifactId>httpclient</artifactId>
-                <version>${httpclient.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>commons-logging</groupId>
-                        <artifactId>commons-logging</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>com.hpe.caf</groupId>
-                <artifactId>rest-client</artifactId>
-                <version>${caf.rest-client.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.jobservice</groupId>
-                <artifactId>worker-batch-extensibility</artifactId>
-                <version>${caf.worker-batch-framework.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>io.dropwizard</groupId>
-                        <artifactId>*</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>com.hpe.aspen</groupId>
-                <artifactId>ed-api</artifactId>
-                <version>${ed.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.workerframework</groupId>
-                <artifactId>worker-core</artifactId>
-                <version>${caf.worker-framework.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.workerframework</groupId>
-                <artifactId>worker-queue-rabbit</artifactId>
-                <version>${caf.worker-framework.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.workerframework</groupId>
-                <artifactId>worker-store-fs</artifactId>
-                <version>${caf.worker-framework.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.postgresql</groupId>
-                <artifactId>postgresql</artifactId>
-                <version>${postgres.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.hpe.aspen</groupId>
-                <artifactId>common-entities</artifactId>
-                <version>${verity-components.version}</version>
-            </dependency>
-            <dependency>
-                <artifactId>aspen-utils</artifactId>
-                <groupId>com.hpe.aspen</groupId>
-                <version>${verity-components.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.hibernate</groupId>
-                <artifactId>hibernate-core</artifactId>
-                <version>${org.hibernate.core.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.hibernate.javax.persistence</groupId>
-                <artifactId>hibernate-jpa-2.1-api</artifactId>
-                <version>${org.hibernate.jpa.api.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.hpe.aspen</groupId>
-                <artifactId>data-enrichment-shared</artifactId>
-                <version>${aspen.data-enrichment-shared.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.hpe.aspen</groupId>
-                <artifactId>analytics-lib</artifactId>
-                <version>${aspen.analytics-lib.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.glassfish.jersey.core</groupId>
-                <artifactId>jersey-common</artifactId>
-                <version>${org.glassfish.jersey.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.glassfish.jersey.media</groupId>
-                <artifactId>jersey-media-multipart</artifactId>
-                <version>${org.glassfish.jersey.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.reflections</groupId>
-                <artifactId>reflections</artifactId>
-                <version>${org.reflections.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.mina</groupId>
-                <artifactId>mina-core</artifactId>
-                <version>${org.apache.mina.core.version}</version>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.ftpserver</groupId>
@@ -745,15 +555,203 @@
                 <version>${ftplet-api.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${httpclient.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>commons-logging</artifactId>
+                        <groupId>commons-logging</groupId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpcore</artifactId>
+                <version>${org.apache.httpcomponents.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpmime</artifactId>
+                <version>${httpmime.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.apache.maven.shared</groupId>
                 <artifactId>maven-shared-utils</artifactId>
                 <version>${org.apache.maven.shared.utils.version}</version>
             </dependency>
             <dependency>
-            <groupId>com.github.cafaudit</groupId>
-            <artifactId>caf-audit</artifactId>
-            <version>${caf-audit.version}</version>
-        </dependency>
+                <groupId>org.apache.mina</groupId>
+                <artifactId>mina-core</artifactId>
+                <version>${org.apache.mina.core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.assertj</groupId>
+                <artifactId>assertj-core</artifactId>
+                <version>${org.assertj.core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.easymock</groupId>
+                <artifactId>easymock</artifactId>
+                <version>${org.easymock.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-bom</artifactId>
+                <version>${org.eclipse.jetty.bom.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.glassfish.jersey.core</groupId>
+                <artifactId>jersey-common</artifactId>
+                <version>${org.glassfish.jersey.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.glassfish.jersey.media</groupId>
+                <artifactId>jersey-media-multipart</artifactId>
+                <version>${org.glassfish.jersey.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hamcrest</groupId>
+                <artifactId>hamcrest-all</artifactId>
+                <version>${hamcrest-all.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-core</artifactId>
+                <version>${org.hibernate.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>${org.hibernate.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate.javax.persistence</groupId>
+                <artifactId>hibernate-jpa-2.1-api</artifactId>
+                <version>${org.hibernate.jpa.api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.logging</groupId>
+                <artifactId>jboss-logging</artifactId>
+                <version>${jboss-logging.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.resteasy</groupId>
+                <artifactId>resteasy-client</artifactId>
+                <version>${resteasy.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jboss.resteasy</groupId>
+                <artifactId>resteasy-jackson2-provider</artifactId>
+                <version>${resteasy.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.json</groupId>
+                <artifactId>json</artifactId>
+                <version>${org.json.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-api</artifactId>
+                <version>${junit.jupiter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-engine</artifactId>
+                <version>${junit.jupiter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-params</artifactId>
+                <version>${junit.jupiter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jvnet.mimepull</groupId>
+                <artifactId>mimepull</artifactId>
+                <version>${org.jvnet.mimepull.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.keycloak</groupId>
+                <artifactId>keycloak-admin-client</artifactId>
+                <version>${org.keycloak.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>commons-logging</artifactId>
+                        <groupId>commons-logging</groupId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.keycloak</groupId>
+                <artifactId>keycloak-common</artifactId>
+                <version>${org.keycloak.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.keycloak</groupId>
+                <artifactId>keycloak-core</artifactId>
+                <version>${org.keycloak.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>${mockito.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-junit-jupiter</artifactId>
+                <version>${mockito.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.postgresql</groupId>
+                <artifactId>postgresql</artifactId>
+                <version>${postgres.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${org.projectlombok.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.reflections</groupId>
+                <artifactId>reflections</artifactId>
+                <version>${org.reflections.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-beans</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>${spring.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>spring-jcl</artifactId>
+                        <groupId>org.springframework</groupId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-web</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.yaml</groupId>
+                <artifactId>snakeyaml</artifactId>
+                <version>${snakeyaml.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>
