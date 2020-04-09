@@ -83,6 +83,7 @@
         <!--Third party dependencies-->
         <com.github.java-json-tools.json-schema-core.version>1.2.10</com.github.java-json-tools.json-schema-core.version>
         <com.github.java-json-tools.json-schema-validator.version>2.2.10</com.github.java-json-tools.json-schema-validator.version>
+        <com.github.lookfirst.sardine.version>5.9</com.github.lookfirst.sardine.version>
         <com.google.code.gson.version>2.8.6</com.google.code.gson.version>
         <com.google.guava.version>28.2-jre</com.google.guava.version>
         <com.googlecode.json-simple.version>1.1.1</com.googlecode.json-simple.version>
@@ -90,17 +91,16 @@
         <com.mesosphere.marathon-client.version>0.6.2</com.mesosphere.marathon-client.version>
         <com.nitorcreations.junit-runners.version>1.2</com.nitorcreations.junit-runners.version>
         <com.rabbitmq.version>5.8.0</com.rabbitmq.version>
-        <com.schibsted.spt.data.jslt>0.1.9</com.schibsted.spt.data.jslt>
-        <!--When updating the version. Change here too - https://github.com/JobService/job-service/blob/develop/docs/pages/en-us/Job-Types.md-->
+        <com.schibsted.spt.data.jslt>0.1.9</com.schibsted.spt.data.jslt><!--When updating the version. Change here too - https://github.com/JobService/job-service/blob/develop/docs/pages/en-us/Job-Types.md-->
         <com.squareup.okhttp.version>2.7.5</com.squareup.okhttp.version>
         <com.squareup.retrofit.version>1.9.0</com.squareup.retrofit.version>
+        <com.sun.mail.javax.mail>1.6.2</com.sun.mail.javax.mail>
         <com.sun.jersey.version>1.19</com.sun.jersey.version>
         <commons-codec.version>1.14</commons-codec.version>
         <commons-io.version>2.6</commons-io.version>
         <elasticsearch.version>7.2.0</elasticsearch.version>
         <hamcrest-all.version>1.3</hamcrest-all.version>
-        <hibernate-validator.version>5.4.3.Final</hibernate-validator.version><!-- Latest version 6.1.2.Final is
-        throwing exception-->
+        <hibernate-validator.version>5.4.3.Final</hibernate-validator.version><!-- Latest version 6.1.2.Final is throwing exception-->
         <info.picocli.version>4.2.0</info.picocli.version>
         <io.swagger.swagger-annotations.version>1.6.0</io.swagger.swagger-annotations.version>
         <jakarta.validation-api.version>2.0.2</jakarta.validation-api.version>
@@ -108,6 +108,7 @@
         <jakarta.xml.bind-api.version>2.3.3</jakarta.xml.bind-api.version>
         <javax.annotation-api.version>1.3.2</javax.annotation-api.version>
         <javax.mail.version>1.5.0-b01</javax.mail.version>
+        <javax.mail.mailapi.version>1.4.3</javax.mail.mailapi.version>
         <javax.validation.validation-api.version>2.0.1.Final</javax.validation.validation-api.version>
         <javax.ws.rs-api.version>2.1.1</javax.ws.rs-api.version>
         <javax.ws.rs.jsr311-api.version>1.1.1</javax.ws.rs.jsr311-api.version>
@@ -226,6 +227,11 @@
                 <version>${com.github.java-json-tools.json-schema-validator.version}</version>
             </dependency>
             <dependency>
+                <groupId>com.github.lookfirst</groupId>
+                <artifactId>sardine</artifactId>
+                <version>${com.github.lookfirst.sardine.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>com.google.code.gson</groupId>
                 <artifactId>gson</artifactId>
                 <version>${com.google.code.gson.version}</version>
@@ -296,6 +302,11 @@
                 <version>${com.sun.jersey.version}</version>
             </dependency>
             <dependency>
+                <groupId>com.sun.mail</groupId>
+                <artifactId>javax.mail</artifactId>
+                <version>${com.sun.mail.javax.mail}</version>
+            </dependency>
+            <dependency>
                 <groupId>commons-codec</groupId>
                 <artifactId>commons-codec</artifactId>
                 <version>${commons-codec.version}</version>
@@ -349,6 +360,11 @@
                 <groupId>javax.mail</groupId>
                 <artifactId>mail</artifactId>
                 <version>${javax.mail.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.mail</groupId>
+                <artifactId>mailapi</artifactId>
+                <version>${javax.mail.mailapi.version}</version>
             </dependency>
             <dependency>
                 <groupId>javax.validation</groupId>
