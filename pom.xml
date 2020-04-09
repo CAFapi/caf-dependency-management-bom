@@ -117,6 +117,7 @@
         <joda-time.version>2.10.5</joda-time.version>
         <junit.jupiter.version>5.6.0</junit.jupiter.version>
         <mockito.version>1.10.19</mockito.version><!--Error with Latest Version 3.3.3-->
+        <net.java.dev.jna.version>5.5.0</net.java.dev.jna.version>
         <org.apache.httpcomponents.version>4.5.12</org.apache.httpcomponents.version>
         <org.apache.httpcomponents.httpcore.version>4.4.13</org.apache.httpcomponents.httpcore.version>
         <org.apache.lucene.version>8.0.0</org.apache.lucene.version>
@@ -390,6 +391,11 @@
                 <groupId>joda-time</groupId>
                 <artifactId>joda-time</artifactId>
                 <version>${joda-time.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>net.java.dev.jna</groupId>
+                <artifactId>jna</artifactId>
+                <version>${net.java.dev.jna.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
