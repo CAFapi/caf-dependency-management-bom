@@ -92,6 +92,7 @@
         <com.nitorcreations.junit-runners.version>1.2</com.nitorcreations.junit-runners.version>
         <com.rabbitmq.version>5.8.0</com.rabbitmq.version>
         <com.schibsted.spt.data.jslt>0.1.9</com.schibsted.spt.data.jslt><!--When updating the version. Change here too - https://github.com/JobService/job-service/blob/develop/docs/pages/en-us/Job-Types.md-->
+        <com.spotify.hamcrest-jackson.version>1.1.5</com.spotify.hamcrest-jackson.version>
         <com.squareup.okhttp.version>2.7.5</com.squareup.okhttp.version>
         <com.squareup.retrofit.version>1.9.0</com.squareup.retrofit.version>
         <com.sun.mail.javax.mail>1.6.2</com.sun.mail.javax.mail>
@@ -118,6 +119,7 @@
         <junit.jupiter.version>5.6.0</junit.jupiter.version>
         <mockito.version>1.10.19</mockito.version><!--Error with Latest Version 3.3.3-->
         <net.java.dev.jna.version>5.5.0</net.java.dev.jna.version>
+        <org.apache.commons.commons-collections4.version>4.4</org.apache.commons.commons-collections4.version>
         <org.apache.httpcomponents.version>4.5.12</org.apache.httpcomponents.version>
         <org.apache.httpcomponents.httpcore.version>4.4.13</org.apache.httpcomponents.httpcore.version>
         <org.apache.lucene.version>8.0.0</org.apache.lucene.version>
@@ -278,6 +280,11 @@
                 <version>${com.schibsted.spt.data.jslt}</version>
             </dependency>
             <dependency>
+                <groupId>com.spotify</groupId>
+                <artifactId>hamcrest-jackson</artifactId>
+                <version>${com.spotify.hamcrest-jackson.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>com.squareup.okhttp</groupId>
                 <artifactId>okhttp</artifactId>
                 <version>${com.squareup.okhttp.version}</version>
@@ -396,6 +403,11 @@
                 <groupId>net.java.dev.jna</groupId>
                 <artifactId>jna</artifactId>
                 <version>${net.java.dev.jna.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-collections4</artifactId>
+                <version>${org.apache.commons.commons-collections4.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
