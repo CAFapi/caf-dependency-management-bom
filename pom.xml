@@ -72,6 +72,7 @@
         <io.dropwizard.bom.version>2.0.2</io.dropwizard.bom.version>
         <org.glassfish.jersey.bom.version>2.30.1</org.glassfish.jersey.bom.version>
         <org.springframework.bom.version>5.2.4.RELEASE</org.springframework.bom.version>
+        <org.springframework.spring-boot-starter-parent.version>2.2.6.RELEASE</org.springframework.spring-boot-starter-parent.version>
         <org.powermock.powermock-mockito-release-full.version>1.6.4</org.powermock.powermock-mockito-release-full.version>
         <org.jboss.resteasy.bom.version>4.5.3.Final</org.jboss.resteasy.bom.version>
         <org.apache.logging.log4j.bom.version>2.11.2</org.apache.logging.log4j.bom.version>
@@ -93,16 +94,20 @@
         <com.rabbitmq.version>5.8.0</com.rabbitmq.version>
         <com.schibsted.spt.data.jslt>0.1.9</com.schibsted.spt.data.jslt><!--When updating the version. Change here too - https://github.com/JobService/job-service/blob/develop/docs/pages/en-us/Job-Types.md-->
         <com.spotify.hamcrest-jackson.version>1.1.5</com.spotify.hamcrest-jackson.version>
+        <com.squareup.okio.version>2.5.0</com.squareup.okio.version>
         <com.squareup.okhttp.version>2.7.5</com.squareup.okhttp.version>
         <com.squareup.retrofit.version>1.9.0</com.squareup.retrofit.version>
         <com.sun.mail.javax.mail>1.6.2</com.sun.mail.javax.mail>
         <com.sun.jersey.version>1.19</com.sun.jersey.version>
         <commons-codec.version>1.10</commons-codec.version><!--Need to wait for 1.15 release of commons codec. Issue - https://issues.apache.org/jira/browse/CODEC-263-->
+        <commons-fileupload.version>1.4</commons-fileupload.version>
         <commons-io.version>2.6</commons-io.version>
         <elasticsearch.version>7.2.0</elasticsearch.version>
         <hamcrest-all.version>1.3</hamcrest-all.version>
         <hibernate-validator.version>5.4.3.Final</hibernate-validator.version><!-- Latest version 6.1.2.Final is throwing exception-->
         <info.picocli.version>4.2.0</info.picocli.version>
+        <io.gsonfire.gson-fire.version>1.8.4</io.gsonfire.gson-fire.version>
+        <io.swagger.core.v3.swagger-annotations>2.1.2</io.swagger.core.v3.swagger-annotations>
         <io.swagger.swagger-annotations.version>1.6.0</io.swagger.swagger-annotations.version>
         <jakarta.validation-api.version>2.0.2</jakarta.validation-api.version>
         <jakarta.ws.rs-api.version>2.1.6</jakarta.ws.rs-api.version>
@@ -116,6 +121,7 @@
         <javax.xml.bind.jaxb-api.version>2.3.1</javax.xml.bind.jaxb-api.version>
         <jboss-logging.version>3.4.1.Final</jboss-logging.version>
         <joda-time.version>2.10.5</joda-time.version>
+        <joschi.jackson.jackson-datatype-threetenbp.version>2.6.4</joschi.jackson.jackson-datatype-threetenbp.version><!--Latest version 2.10.0 of jackson-datatype-threetenbp doesn't support com.fasterxml.jackson.datatype.threetenbp.DateTimeUtils-->
         <junit.jupiter.version>5.6.0</junit.jupiter.version>
         <mockito.version>1.10.19</mockito.version><!--Error with Latest Version 3.3.3-->
         <net.java.dev.jna.version>5.5.0</net.java.dev.jna.version>
@@ -128,6 +134,7 @@
         <org.json.version>20190722</org.json.version>
         <org.projectlombok.version>1.18.12</org.projectlombok.version>
         <org.slf4j.version>1.7.30</org.slf4j.version>
+        <org.threetenbp.version>1.4.3</org.threetenbp.version>
         <org.webjars.npm.swagger-ui-dist.version>3.25.0</org.webjars.npm.swagger-ui-dist.version>
         <snakeyaml.version>1.26</snakeyaml.version>
         <swagger-jersey-jaxrs.version>1.6.0</swagger-jersey-jaxrs.version>
@@ -211,6 +218,13 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-parent</artifactId>
+                <version>${org.springframework.spring-boot-starter-parent.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
             <?SORTPOM RESUME?>
 
             <!--Other dependencies-->
@@ -228,6 +242,11 @@
                 <groupId>com.github.java-json-tools</groupId>
                 <artifactId>json-schema-validator</artifactId>
                 <version>${com.github.java-json-tools.json-schema-validator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.joschi.jackson</groupId>
+                <artifactId>jackson-datatype-threetenbp</artifactId>
+                <version>${joschi.jackson.jackson-datatype-threetenbp.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.github.lookfirst</groupId>
@@ -286,8 +305,18 @@
             </dependency>
             <dependency>
                 <groupId>com.squareup.okhttp</groupId>
+                <artifactId>logging-interceptor</artifactId>
+                <version>${com.squareup.okhttp.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.squareup.okhttp</groupId>
                 <artifactId>okhttp</artifactId>
                 <version>${com.squareup.okhttp.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.squareup.okio</groupId>
+                <artifactId>okio</artifactId>
+                <version>${com.squareup.okio.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.squareup.retrofit</groupId>
@@ -320,6 +349,11 @@
                 <version>${commons-codec.version}</version>
             </dependency>
             <dependency>
+                <groupId>commons-fileupload</groupId>
+                <artifactId>commons-fileupload</artifactId>
+                <version>${commons-fileupload.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
                 <version>${commons-io.version}</version>
@@ -328,6 +362,11 @@
                 <groupId>info.picocli</groupId>
                 <artifactId>picocli</artifactId>
                 <version>${info.picocli.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.gsonfire</groupId>
+                <artifactId>gson-fire</artifactId>
+                <version>${io.gsonfire.gson-fire.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.swagger</groupId>
@@ -343,6 +382,11 @@
                 <groupId>io.swagger</groupId>
                 <artifactId>swagger-jersey-jaxrs</artifactId>
                 <version>${swagger-jersey-jaxrs.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.swagger.core.v3</groupId>
+                <artifactId>swagger-annotations</artifactId>
+                <version>${io.swagger.core.v3.swagger-annotations}</version>
             </dependency>
             <dependency>
                 <groupId>jakarta.validation</groupId>
@@ -534,6 +578,11 @@
                 <version>${org.slf4j.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.threeten</groupId>
+                <artifactId>threetenbp</artifactId>
+                <version>${org.threetenbp.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.webjars.npm</groupId>
                 <artifactId>swagger-ui-dist</artifactId>
                 <version>${org.webjars.npm.swagger-ui-dist.version}</version>
@@ -543,10 +592,6 @@
                 <artifactId>snakeyaml</artifactId>
                 <version>${snakeyaml.version}</version>
             </dependency>
-
-            <!--staging service-->
-
-
         </dependencies>
     </dependencyManagement>
 </project>
