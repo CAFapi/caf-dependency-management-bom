@@ -89,6 +89,7 @@
         <com.google.code.gson.version>2.8.6</com.google.code.gson.version>
         <com.google.guava.version>28.2-jre</com.google.guava.version>
         <com.googlecode.json-simple.version>1.1.1</com.googlecode.json-simple.version>
+        <com.healthmarketscience.sqlbuilder.version>3.0.0</com.healthmarketscience.sqlbuilder.version>
         <com.jayway.jsonpath.version>2.4.0</com.jayway.jsonpath.version>
         <com.mesosphere.marathon-client.version>0.6.2</com.mesosphere.marathon-client.version>
         <com.nitorcreations.junit-runners.version>1.2</com.nitorcreations.junit-runners.version>
@@ -129,7 +130,7 @@
         <org.apache.commons.commons-collections4.version>4.4</org.apache.commons.commons-collections4.version>
         <org.apache.httpcomponents.version>4.5.12</org.apache.httpcomponents.version>
         <org.apache.httpcomponents.httpcore.version>4.4.13</org.apache.httpcomponents.httpcore.version>
-        <org.apache.lucene.version>8.0.0</org.apache.lucene.version>
+        <org.apache.lucene.version>8.5.0</org.apache.lucene.version>
         <org.codehaus.jettison.version>1.4.0</org.codehaus.jettison.version>
         <org.glassfish.javax.el.version>3.0.1-b11</org.glassfish.javax.el.version>
         <org.jadira.usertype.version>7.0.0.CR1</org.jadira.usertype.version>
@@ -269,6 +270,11 @@
                 <groupId>com.googlecode.json-simple</groupId>
                 <artifactId>json-simple</artifactId>
                 <version>${com.googlecode.json-simple.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.healthmarketscience.sqlbuilder</groupId>
+                <artifactId>sqlbuilder</artifactId>
+                <version>${com.healthmarketscience.sqlbuilder.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.hpe.caf.storage</groupId>
@@ -503,6 +509,11 @@
                 <version>${org.apache.lucene.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-join</artifactId>
+                <version>${org.apache.lucene.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.codehaus.jettison</groupId>
                 <artifactId>jettison</artifactId>
                 <version>${org.codehaus.jettison.version}</version>
@@ -510,6 +521,11 @@
             <dependency>
                 <groupId>org.elasticsearch</groupId>
                 <artifactId>elasticsearch</artifactId>
+                <version>${elasticsearch.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.elasticsearch</groupId>
+                <artifactId>elasticsearch-core</artifactId>
                 <version>${elasticsearch.version}</version>
             </dependency>
             <dependency>
