@@ -125,7 +125,6 @@
         <joda-time.version>2.10.5</joda-time.version>
         <joschi.jackson.jackson-datatype-threetenbp.version>2.6.4</joschi.jackson.jackson-datatype-threetenbp.version><!--Latest version 2.10.0 of jackson-datatype-threetenbp doesn't support com.fasterxml.jackson.datatype.threetenbp.DateTimeUtils-->
         <junit.jupiter.version>5.6.0</junit.jupiter.version>
-        <mockito.version>1.10.19</mockito.version><!--Error with Latest Version 3.3.3-->
         <net.java.dev.jna.version>5.5.0</net.java.dev.jna.version>
         <org.apache.commons.commons-collections4.version>4.4</org.apache.commons.commons-collections4.version>
         <org.apache.httpcomponents.version>4.5.12</org.apache.httpcomponents.version>
@@ -135,6 +134,8 @@
         <org.glassfish.javax.el.version>3.0.1-b11</org.glassfish.javax.el.version>
         <org.jadira.usertype.version>7.0.0.CR1</org.jadira.usertype.version>
         <org.json.version>20190722</org.json.version>
+        <org.mockito.mockito-all.version>1.10.19</org.mockito.mockito-all.version>
+        <org.mockito.version>3.3.3</org.mockito.version>
         <org.projectlombok.version>1.18.12</org.projectlombok.version>
         <org.slf4j.version>1.7.30</org.slf4j.version>
         <org.threetenbp.version>1.4.3</org.threetenbp.version>
@@ -598,17 +599,17 @@
             <dependency>
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-all</artifactId>
-                <version>${mockito.version}</version>
+                <version>${org.mockito.mockito-all.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-core</artifactId>
-                <version>${mockito.version}</version>
+                <version>${org.mockito.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-junit-jupiter</artifactId>
-                <version>${mockito.version}</version>
+                <version>${org.mockito.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.projectlombok</groupId>
