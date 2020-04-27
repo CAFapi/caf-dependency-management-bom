@@ -133,6 +133,7 @@
         <org.apache.httpcomponents.version>4.5.12</org.apache.httpcomponents.version>
         <org.apache.httpcomponents.httpcore.version>4.4.13</org.apache.httpcomponents.httpcore.version>
         <org.apache.lucene.version>8.0.0</org.apache.lucene.version>
+        <org.apache.velocity.version>1.7</org.apache.velocity.version>
         <org.codehaus.jettison.version>1.4.0</org.codehaus.jettison.version>
         <org.flywaydb.version>5.2.4</org.flywaydb.version><!--Latest 6.4.0 needs changes-->
         <org.glassfish.javax.el.version>3.0.1-b11</org.glassfish.javax.el.version>
@@ -142,6 +143,7 @@
         <org.mockito.mockito-all.version>1.10.19</org.mockito.mockito-all.version>
         <org.mockito.version>3.3.3</org.mockito.version>
         <org.projectlombok.version>1.18.12</org.projectlombok.version>
+        <org.reflections.version>0.9.12</org.reflections.version>
         <org.roaringbitmap.version>0.8.15</org.roaringbitmap.version>
         <org.slf4j.version>1.7.30</org.slf4j.version>
         <org.threetenbp.version>1.4.3</org.threetenbp.version>
@@ -541,6 +543,11 @@
                 <version>${org.apache.lucene.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.apache.velocity</groupId>
+                <artifactId>velocity</artifactId>
+                <version>${org.apache.velocity.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.codehaus.jettison</groupId>
                 <artifactId>jettison</artifactId>
                 <version>${org.codehaus.jettison.version}</version>
@@ -656,6 +663,11 @@
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${org.projectlombok.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.reflections</groupId>
+                <artifactId>reflections</artifactId>
+                <version>${org.reflections.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.roaringbitmap</groupId>
