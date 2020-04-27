@@ -95,6 +95,7 @@
         <com.jayway.jsonpath.version>2.4.0</com.jayway.jsonpath.version>
         <com.mchange.c3p0.version>0.9.5.5</com.mchange.c3p0.version>
         <com.mesosphere.marathon-client.version>0.6.2</com.mesosphere.marathon-client.version>
+        <com.neovisionaries.nv-i18n.version>1.27</com.neovisionaries.nv-i18n.version>
         <com.nitorcreations.junit-runners.version>1.2</com.nitorcreations.junit-runners.version>
         <com.rabbitmq.version>5.8.0</com.rabbitmq.version>
         <com.schibsted.spt.data.jslt>0.1.9</com.schibsted.spt.data.jslt><!--When updating the version. Change here too - https://github.com/JobService/job-service/blob/develop/docs/pages/en-us/Job-Types.md-->
@@ -314,6 +315,11 @@
                 <groupId>com.mesosphere</groupId>
                 <artifactId>marathon-client</artifactId>
                 <version>${com.mesosphere.marathon-client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.neovisionaries</groupId>
+                <artifactId>nv-i18n</artifactId>
+                <version>${com.neovisionaries.nv-i18n.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.nitorcreations</groupId>
