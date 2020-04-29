@@ -134,6 +134,7 @@
         <jboss-logging.version>3.4.1.Final</jboss-logging.version>
         <joda-time.version>2.10.5</joda-time.version>
         <joschi.jackson.jackson-datatype-threetenbp.version>2.6.4</joschi.jackson.jackson-datatype-threetenbp.version><!--Latest version 2.10.0 of jackson-datatype-threetenbp doesn't support com.fasterxml.jackson.datatype.threetenbp.DateTimeUtils-->
+        <junit.version>4.13</junit.version>
         <junit.jupiter.version>5.6.0</junit.jupiter.version>
         <net.java.dev.jna.version>5.5.0</net.java.dev.jna.version>
         <org.apache.commons.commons-collections4.version>4.4</org.apache.commons.commons-collections4.version>
@@ -539,6 +540,11 @@
                 <groupId>joda-time</groupId>
                 <artifactId>joda-time</artifactId>
                 <version>${joda-time.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
             </dependency>
             <dependency>
                 <groupId>net.java.dev.jna</groupId>
