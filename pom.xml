@@ -139,6 +139,8 @@
         <net.java.dev.jna.version>5.5.0</net.java.dev.jna.version>
         <org.apache.commons.commons-collections4.version>4.4</org.apache.commons.commons-collections4.version>
         <org.apache.commons.commons-compress.version>1.14</org.apache.commons.commons-compress.version>
+        <org.apache.ftpserver.version>1.1.1</org.apache.ftpserver.version>
+        <org.apache.mina.mina-core.version>2.1.3</org.apache.mina.mina-core.version>
         <org.apache.httpcomponents.version>4.5.12</org.apache.httpcomponents.version>
         <org.apache.httpcomponents.httpcore.version>4.4.13</org.apache.httpcomponents.httpcore.version>
         <org.apache.lucene.version>8.0.0</org.apache.lucene.version>
@@ -575,6 +577,16 @@
                 <version>${org.apache.commons.commons-compress.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.apache.ftpserver</groupId>
+                <artifactId>ftplet-api</artifactId>
+                <version>${org.apache.ftpserver.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.ftpserver</groupId>
+                <artifactId>ftpserver-core</artifactId>
+                <version>${org.apache.ftpserver.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpclient</artifactId>
                 <version>${org.apache.httpcomponents.version}</version>
@@ -605,6 +617,11 @@
                 <groupId>org.apache.lucene</groupId>
                 <artifactId>lucene-join</artifactId>
                 <version>${org.apache.lucene.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.mina</groupId>
+                <artifactId>mina-core</artifactId>
+                <version>${org.apache.mina.mina-core.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.velocity</groupId>
