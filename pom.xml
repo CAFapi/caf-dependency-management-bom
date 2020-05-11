@@ -153,7 +153,7 @@
         <org.glassfish.javax.el.version>3.0.1-b11</org.glassfish.javax.el.version>
         <org.hibernate.javax.persistence.hibernate-jpa-2.1-api.version>1.0.2.Final</org.hibernate.javax.persistence.hibernate-jpa-2.1-api.version>
         <org.jadira.usertype.version>7.0.0.CR1</org.jadira.usertype.version>
-        <org.javassist.version>3.24.0-GA</org.javassist.version>
+        <org.javassist.version>3.24.1-GA</org.javassist.version>
         <org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.0_spec.version>1.0.1.Final</org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.0_spec.version>
         <org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec.version>2.0.1.Final</org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec.version>
         <org.jboss.spec.javax.xml.bind.jboss-jaxb-api_2.3_spec.version>1.0.1.Final</org.jboss.spec.javax.xml.bind.jboss-jaxb-api_2.3_spec.version>
