@@ -110,6 +110,7 @@
         <com.squareup.retrofit.version>1.9.0</com.squareup.retrofit.version>
         <com.sun.mail.javax.mail>1.6.2</com.sun.mail.javax.mail>
         <com.sun.jersey.version>1.19</com.sun.jersey.version>
+        <com.sun.xml.bind.jaxb-impl>2.3.3</com.sun.xml.bind.jaxb-impl>
         <commons-codec.version>1.10</commons-codec.version><!--Need to wait for 1.15 release of commons codec. Issue - https://issues.apache.org/jira/browse/CODEC-263-->
         <commons-fileupload.version>1.4</commons-fileupload.version>
         <commons-io.version>2.6</commons-io.version>
@@ -440,6 +441,11 @@
                 <groupId>com.sun.mail</groupId>
                 <artifactId>javax.mail</artifactId>
                 <version>${com.sun.mail.javax.mail}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sun.xml.bind</groupId>
+                <artifactId>jaxb-impl</artifactId>
+                <version>${com.sun.xml.bind.jaxb-impl}</version>
             </dependency>
             <dependency>
                 <groupId>commons-codec</groupId>
