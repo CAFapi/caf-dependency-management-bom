@@ -152,6 +152,8 @@
         <org.eclipse.persistence.javax.persistence.version>2.2.1</org.eclipse.persistence.javax.persistence.version>
         <org.flywaydb.version>5.2.4</org.flywaydb.version><!--Latest 6.4.0 needs changes-->
         <org.glassfish.javax.el.version>3.0.1-b11</org.glassfish.javax.el.version>
+        <org.graalvm.js.version>20.1.0</org.graalvm.js.version>
+        <org.graalvm.sdk.vesion>20.1.0</org.graalvm.sdk.vesion>
         <org.hdrhistogram.version>2.1.11</org.hdrhistogram.version>
         <org.hibernate.javax.persistence.hibernate-jpa-2.1-api.version>1.0.2.Final</org.hibernate.javax.persistence.hibernate-jpa-2.1-api.version>
         <org.jadira.usertype.version>7.0.0.CR1</org.jadira.usertype.version>
@@ -727,6 +729,21 @@
                 <groupId>org.glassfish</groupId>
                 <artifactId>javax.el</artifactId>
                 <version>${org.glassfish.javax.el.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.graalvm.js</groupId>
+                <artifactId>js</artifactId>
+                <version>${org.graalvm.js.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.graalvm.js</groupId>
+                <artifactId>js-scriptengine</artifactId>
+                <version>${org.graalvm.js.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.graalvm.sdk</groupId>
+                <artifactId>graal-sdk</artifactId>
+                <version>${org.graalvm.sdk.vesion}</version>
             </dependency>
             <dependency>
                 <groupId>org.hamcrest</groupId>
