@@ -69,7 +69,7 @@
         <!--BOM dependencies versions-->
         <caf.worker-document-framework.bom.version>4.5.0-SNAPSHOT</caf.worker-document-framework.bom.version>
         <com.fasterxml.jackson.bom.version>2.10.3</com.fasterxml.jackson.bom.version>
-        <io.dropwizard.bom.version>2.0.8</io.dropwizard.bom.version>
+        <io.dropwizard.bom.version>2.0.15</io.dropwizard.bom.version>
         <org.glassfish.jersey.bom.version>2.30.1</org.glassfish.jersey.bom.version>
         <org.springframework.bom.version>5.2.4.RELEASE</org.springframework.bom.version>
         <org.springframework.spring-boot-starter-parent.version>2.2.6.RELEASE</org.springframework.spring-boot-starter-parent.version>
@@ -110,7 +110,7 @@
         <com.sun.mail.javax.mail>1.6.2</com.sun.mail.javax.mail>
         <com.sun.jersey.version>1.19</com.sun.jersey.version>
         <com.sun.xml.bind.jaxb-impl>2.3.3</com.sun.xml.bind.jaxb-impl>
-        <commons-codec.version>1.10</commons-codec.version><!--Need to wait for 1.15 release of commons codec. Issue - https://issues.apache.org/jira/browse/CODEC-263-->
+        <commons-codec.version>1.15</commons-codec.version>
         <commons-fileupload.version>1.4</commons-fileupload.version>
         <commons-io.version>2.6</commons-io.version>
         <commons-lang.version>2.6</commons-lang.version>
@@ -156,7 +156,6 @@
         <org.hdrhistogram.version>2.1.11</org.hdrhistogram.version>
         <org.hibernate.javax.persistence.hibernate-jpa-2.1-api.version>1.0.2.Final</org.hibernate.javax.persistence.hibernate-jpa-2.1-api.version>
         <org.jadira.usertype.version>7.0.0.CR1</org.jadira.usertype.version>
-        <org.javassist.version>3.24.1-GA</org.javassist.version>
         <org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.0_spec.version>1.0.1.Final</org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.0_spec.version>
         <org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec.version>2.0.1.Final</org.jboss.spec.javax.ws.rs.jboss-jaxrs-api_2.1_spec.version>
         <org.jboss.spec.javax.xml.bind.jboss-jaxb-api_2.3_spec.version>1.0.1.Final</org.jboss.spec.javax.xml.bind.jboss-jaxb-api_2.3_spec.version>
@@ -768,11 +767,6 @@
                 <groupId>org.jadira.usertype</groupId>
                 <artifactId>usertype.spi</artifactId>
                 <version>${org.jadira.usertype.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.javassist</groupId>
-                <artifactId>javassist</artifactId>
-                <version>${org.javassist.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.jboss.logging</groupId>
