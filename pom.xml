@@ -166,7 +166,7 @@
         <org.mnode.ical4j.version>3.0.6</org.mnode.ical4j.version>
         <org.mockito.mockito-all.version>1.10.19</org.mockito.mockito-all.version>
         <org.mockito.version>3.3.3</org.mockito.version>
-        <org.postgresql.version>42.2.4</org.postgresql.version>
+        <org.postgresql.version>42.2.18</org.postgresql.version>
         <org.projectlombok.version>1.18.12</org.projectlombok.version>
         <org.reflections.version>0.9.12</org.reflections.version>
         <org.roaringbitmap.version>0.8.15</org.roaringbitmap.version>
