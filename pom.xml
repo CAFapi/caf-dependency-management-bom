@@ -83,7 +83,7 @@
         <!--Third party dependencies-->
         <antlr.version>4.2</antlr.version>
         <com.github.alexmojaki.s3-stream-upload.version>1.0.1</com.github.alexmojaki.s3-stream-upload.version>
-        <com.github.java-json-tools.json-schema-core.version>1.2.10</com.github.java-json-tools.json-schema-core.version>
+        <com.github.java-json-tools.json-schema-core.version>1.2.14</com.github.java-json-tools.json-schema-core.version>
         <com.github.java-json-tools.json-schema-validator.version>2.2.10</com.github.java-json-tools.json-schema-validator.version>
         <com.github.lookfirst.sardine.version>5.9</com.github.lookfirst.sardine.version>
         <com.github.stephenc.jcip.jcip-annotations.version>1.0-1</com.github.stephenc.jcip.jcip-annotations.version>
