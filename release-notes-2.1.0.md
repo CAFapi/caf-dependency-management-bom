@@ -4,7 +4,7 @@
 ${version-number}
 
 #### Breaking Changes
-SCMOD-11144: Update Worker Framework to 5.0.0, which supports pause task functionality.
+SCMOD-12730: Update Worker Framework to 5.0.0, which supports pause task functionality.
 
 #### Known Issues
 - None
