@@ -172,7 +172,7 @@
         <org.roaringbitmap.version>0.8.15</org.roaringbitmap.version>
         <org.slf4j.version>1.7.30</org.slf4j.version>
         <org.threetenbp.version>1.4.3</org.threetenbp.version>
-        <org.webjars.npm.swagger-ui-dist.version>3.25.0</org.webjars.npm.swagger-ui-dist.version>
+        <org.webjars.npm.swagger-ui-dist.version>3.52.0</org.webjars.npm.swagger-ui-dist.version>
         <snakeyaml.version>1.26</snakeyaml.version>
         <swagger-jersey-jaxrs.version>1.6.0</swagger-jersey-jaxrs.version>
     </properties>
