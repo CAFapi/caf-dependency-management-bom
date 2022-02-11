@@ -78,7 +78,7 @@
         <org.apache.logging.log4j.bom.version>2.11.2</org.apache.logging.log4j.bom.version>
 
         <!--Internal dependencies versions -->
-        <caf-logging-logback.version>1.3.0-95</caf-logging-logback.version>
+        <caf-logging-logback.version>2.0.0-SNAPSHOT</caf-logging-logback.version>
 
         <!--Third party dependencies-->
         <antlr.version>4.2</antlr.version>
