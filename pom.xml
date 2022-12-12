@@ -214,8 +214,9 @@
                 <scope>import</scope>
             </dependency>
 
-            <!--This version of com.fasterxml.jackson won't be effective as worker-framework brings in 2.9.8-->
-            <!--https://github.com/WorkerFramework/worker-framework/blob/develop/pom.xml#L113-->
+            <!--This version of com.fasterxml.jackson may not be effective if worker-framework (which is listed first and so has priority)
+            brings in a different version -->
+            <!--https://github.com/WorkerFramework/worker-framework/blob/develop/pom.xml#L97-->
             <dependency>
                 <groupId>com.fasterxml.jackson</groupId>
                 <artifactId>jackson-bom</artifactId>
