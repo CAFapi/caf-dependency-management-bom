@@ -67,7 +67,7 @@
         <copyrightNotice>Copyright ${project.inceptionYear}-${copyrightYear} Micro Focus or one of its affiliates.</copyrightNotice>
 
         <!--BOM dependencies versions-->
-        <caf.worker-document-framework.bom.version>5.1.0-1038</caf.worker-document-framework.bom.version>
+        <caf.worker-document-framework.bom.version>5.2.0-SNAPSHOT</caf.worker-document-framework.bom.version>
         <com.fasterxml.jackson.bom.version>2.10.3</com.fasterxml.jackson.bom.version>
         <io.dropwizard.bom.version>2.0.8</io.dropwizard.bom.version>
         <org.glassfish.jersey.bom.version>2.30.1</org.glassfish.jersey.bom.version>
