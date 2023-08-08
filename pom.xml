@@ -391,7 +391,7 @@
             </dependency>
             <dependency>
                 <groupId>com.squareup.okio</groupId>
-                <artifactId>okio</artifactId>
+                <artifactId>okio-jvm</artifactId>
                 <version>${com.squareup.okio.version}</version>
             </dependency>
             <dependency>
